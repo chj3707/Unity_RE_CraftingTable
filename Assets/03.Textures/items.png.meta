@@ -1,0 +1,3300 @@
+fileFormatVersion: 2
+guid: ea230a4bc9197144bad0a286cb4fa803
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6761164967045977113
+    second: White Wool
+  - first:
+      213: 5508725064705088119
+    second: Carrot
+  - first:
+      213: -68751727340038015
+    second: Red Mushroom
+  - first:
+      213: 6099581493293703690
+    second: Milk Bucket
+  - first:
+      213: -5428206428529569624
+    second: Oak Planks
+  - first:
+      213: -7833671090200325546
+    second: Egg
+  - first:
+      213: 5860025163644826426
+    second: Birch Planks
+  - first:
+      213: -7583409310137716746
+    second: Sugar
+  - first:
+      213: 980155311395259703
+    second: Cake
+  - first:
+      213: -732356172534689064
+    second: Sand
+  - first:
+      213: 8132948862792318974
+    second: Brown Mushroom
+  - first:
+      213: 2614870373251885436
+    second: items_11
+  - first:
+      213: -2693009140137883590
+    second: items_12
+  - first:
+      213: -956252262595852801
+    second: items_13
+  - first:
+      213: 6738218706411903907
+    second: items_14
+  - first:
+      213: -6338023803479276477
+    second: items_15
+  - first:
+      213: 6395214293025444372
+    second: items_16
+  - first:
+      213: -4538752222985096420
+    second: items_17
+  - first:
+      213: 4533227004153260592
+    second: items_18
+  - first:
+      213: 1122774824596591943
+    second: items_19
+  - first:
+      213: 7911235102323647998
+    second: items_20
+  - first:
+      213: -4058434812019303673
+    second: items_21
+  - first:
+      213: 8436657204533251546
+    second: Oak Log
+  - first:
+      213: 6191716412420617325
+    second: Spruce Log
+  - first:
+      213: 6355480216337973169
+    second: Birch Log
+  - first:
+      213: -9098891631924085042
+    second: Jungle Log
+  - first:
+      213: 1784186740104572286
+    second: items_26
+  - first:
+      213: 8391431092616798930
+    second: items_27
+  - first:
+      213: 6077338267653451029
+    second: items_28
+  - first:
+      213: -7121528990389113491
+    second: items_29
+  - first:
+      213: 7306274148607722714
+    second: items_30
+  - first:
+      213: -7162647019817104946
+    second: Glass
+  - first:
+      213: -8561806557982860685
+    second: items_32
+  - first:
+      213: 9216205297631055959
+    second: items_33
+  - first:
+      213: 2586642229955333766
+    second: items_34
+  - first:
+      213: -6102374392529501751
+    second: items_35
+  - first:
+      213: -4278747916818796210
+    second: items_36
+  - first:
+      213: 9130684549513820550
+    second: items_37
+  - first:
+      213: 5947598201806246533
+    second: items_38
+  - first:
+      213: 124106431076995637
+    second: Bed
+  - first:
+      213: 6908069387385937300
+    second: Powered Rail
+  - first:
+      213: 3864835576925441180
+    second: Detector Rail
+  - first:
+      213: 3158488010477605343
+    second: items_42
+  - first:
+      213: -2291968272303781032
+    second: Cobweb
+  - first:
+      213: 6314550479633173585
+    second: items_44
+  - first:
+      213: -851246318378289833
+    second: items_45
+  - first:
+      213: -2892722968376938932
+    second: items_46
+  - first:
+      213: -4502050031476377117
+    second: items_47
+  - first:
+      213: 8862701587616323045
+    second: items_48
+  - first:
+      213: 5492500456884366514
+    second: items_49
+  - first:
+      213: -2580360775680210046
+    second: items_50
+  - first:
+      213: 2316303970329030911
+    second: items_51
+  - first:
+      213: -8029774753496570066
+    second: items_52
+  - first:
+      213: 6234064350648681191
+    second: items_53
+  - first:
+      213: -1083111729585998019
+    second: items_54
+  - first:
+      213: 7605754988663979374
+    second: items_55
+  - first:
+      213: 6958571527567373106
+    second: items_56
+  - first:
+      213: 7072109450132228763
+    second: items_57
+  - first:
+      213: 8069547862873273568
+    second: items_58
+  - first:
+      213: -8297164604188563192
+    second: items_59
+  - first:
+      213: 656702045158751335
+    second: items_60
+  - first:
+      213: 8386005727647381285
+    second: items_61
+  - first:
+      213: 7419183496887217242
+    second: items_62
+  - first:
+      213: -7922772116564282560
+    second: items_63
+  - first:
+      213: -5344007660830287148
+    second: items_64
+  - first:
+      213: -1742012962666287389
+    second: items_65
+  - first:
+      213: -6556086720143981034
+    second: items_66
+  - first:
+      213: 6214652250989123760
+    second: items_67
+  - first:
+      213: 5044350967181698012
+    second: items_68
+  - first:
+      213: -1906296669749205340
+    second: Brown Mushroom
+  - first:
+      213: -7655823996655903715
+    second: Red Mushroom
+  - first:
+      213: 7116206395379427616
+    second: Block of Gold
+  - first:
+      213: 2140243605101427217
+    second: Block of Iron
+  - first:
+      213: -6229739577819397656
+    second: items_73
+  - first:
+      213: -4063295180217184869
+    second: items_74
+  - first:
+      213: 3447626333678633045
+    second: items_75
+  - first:
+      213: -7651958066320933242
+    second: Cobblestone
+  - first:
+      213: 4078589816385665303
+    second: Bricks
+  - first:
+      213: -5939302461621596088
+    second: items_78
+  - first:
+      213: 206911327383899660
+    second: items_79
+  - first:
+      213: 552989659857323890
+    second: items_80
+  - first:
+      213: 4292883687895924744
+    second: items_81
+  - first:
+      213: -1704500264438275045
+    second: items_82
+  - first:
+      213: -8295029410813222302
+    second: items_83
+  - first:
+      213: -4016013334462737405
+    second: Cobblestone Slab
+  - first:
+      213: -7479063964076681684
+    second: Brick Slab
+  - first:
+      213: -5996106085844551684
+    second: items_86
+  - first:
+      213: 8450120992082419419
+    second: items_87
+  - first:
+      213: -5362799649635832982
+    second: items_88
+  - first:
+      213: -220729229975464070
+    second: items_89
+  - first:
+      213: -3450007023295956540
+    second: TNT
+  - first:
+      213: 171138705577659461
+    second: Bookshelf
+  - first:
+      213: -6620927211670007745
+    second: items_92
+  - first:
+      213: 5484207526445910981
+    second: items_93
+  - first:
+      213: -8124165405611791505
+    second: Torch
+  - first:
+      213: 7062176475876359583
+    second: items_95
+  - first:
+      213: -3514555725737318775
+    second: items_96
+  - first:
+      213: 1089564401988209714
+    second: Oak Stairs
+  - first:
+      213: -975732921841048486
+    second: Chest
+  - first:
+      213: -8864223617709786134
+    second: items_99
+  - first:
+      213: 8344717679193547042
+    second: items_100
+  - first:
+      213: 1651301721702839308
+    second: Block of Diamond
+  - first:
+      213: 5755098471613179246
+    second: Crafting Table
+  - first:
+      213: -3718929783938772351
+    second: items_103
+  - first:
+      213: 9184157982723834790
+    second: items_104
+  - first:
+      213: -1754823780530430466
+    second: items_105
+  - first:
+      213: 6203400943613683936
+    second: items_106
+  - first:
+      213: 7852314945348522046
+    second: Oak Sign
+  - first:
+      213: -7905648789407400134
+    second: Oak Door
+  - first:
+      213: -5703758344047898144
+    second: Ladder
+  - first:
+      213: -7323674943459820596
+    second: Rail
+  - first:
+      213: -8650232248937032532
+    second: Cobblestone Stairs
+  - first:
+      213: 4775838593620856055
+    second: items_112
+  - first:
+      213: -2660569609710428876
+    second: items_113
+  - first:
+      213: -8574266010513421610
+    second: items_114
+  - first:
+      213: 233620996897989955
+    second: Iron Door
+  - first:
+      213: 2936779923054452310
+    second: Oak Pressure Plate
+  - first:
+      213: -3753784414763703992
+    second: items_117
+  - first:
+      213: -2703565723401933593
+    second: items_118
+  - first:
+      213: 117214147892069551
+    second: items_119
+  - first:
+      213: -4790045407390419966
+    second: Redstone Torch
+  - first:
+      213: -6064055205779420750
+    second: items_121
+  - first:
+      213: 3386722485073375770
+    second: items_122
+  - first:
+      213: 6068373614614089934
+    second: items_123
+  - first:
+      213: -649829298453278362
+    second: items_124
+  - first:
+      213: -1929863458776020100
+    second: items_125
+  - first:
+      213: -914228068540843439
+    second: items_126
+  - first:
+      213: -6988130921096395802
+    second: items_127
+  - first:
+      213: -5539077537493426
+    second: items_128
+  - first:
+      213: -4550341189887911203
+    second: Oak Fence
+  - first:
+      213: -3930946897451993484
+    second: items_130
+  - first:
+      213: 5846979971430347887
+    second: items_131
+  - first:
+      213: 1359165526104252653
+    second: items_132
+  - first:
+      213: 9148803566423877661
+    second: items_133
+  - first:
+      213: 1533569245288039128
+    second: items_134
+  - first:
+      213: -2108055075359774045
+    second: items_135
+  - first:
+      213: -3978551154961114089
+    second: Cake
+  - first:
+      213: 6720243606718852342
+    second: items_137
+  - first:
+      213: 1039740323736012158
+    second: items_138
+  - first:
+      213: 8086557183682922639
+    second: items_139
+  - first:
+      213: -8726926368370625433
+    second: Oak Trapdoor
+  - first:
+      213: -1067920246338498130
+    second: items_141
+  - first:
+      213: -1712464291680838311
+    second: items_142
+  - first:
+      213: 5337744933849262730
+    second: items_143
+  - first:
+      213: 9074706117657797723
+    second: items_144
+  - first:
+      213: 5820086750453969133
+    second: items_145
+  - first:
+      213: -2834859317503590577
+    second: items_146
+  - first:
+      213: -4939730339798417211
+    second: items_147
+  - first:
+      213: 5269696323455554877
+    second: items_148
+  - first:
+      213: 8286571802576935001
+    second: items_149
+  - first:
+      213: -5626462023738469512
+    second: items_150
+  - first:
+      213: -8089074258220290989
+    second: Glass Pane
+  - first:
+      213: 7903874054988691285
+    second: items_152
+  - first:
+      213: -303773854570714582
+    second: items_153
+  - first:
+      213: 497271462812818090
+    second: items_154
+  - first:
+      213: 2992740897147028129
+    second: items_155
+  - first:
+      213: 7449126770283777516
+    second: Oak Fence Gate
+  - first:
+      213: 4033428354454998030
+    second: items_157
+  - first:
+      213: -3083499485765743726
+    second: items_158
+  - first:
+      213: 3226743548265507589
+    second: items_159
+  - first:
+      213: -8275251718437484499
+    second: items_160
+  - first:
+      213: 5252835699789497765
+    second: items_161
+  - first:
+      213: 5413622142816706186
+    second: items_162
+  - first:
+      213: 7223933354684737430
+    second: items_163
+  - first:
+      213: 6884638544535043099
+    second: items_164
+  - first:
+      213: -5456021369733951222
+    second: items_165
+  - first:
+      213: 1881094940640685950
+    second: items_166
+  - first:
+      213: -5487276986869650839
+    second: items_167
+  - first:
+      213: -3471105485034724482
+    second: items_168
+  - first:
+      213: 7463198533326207501
+    second: items_169
+  - first:
+      213: 8297024878129875434
+    second: items_170
+  - first:
+      213: -283928834605712996
+    second: items_171
+  - first:
+      213: -1355992391739867059
+    second: items_172
+  - first:
+      213: 3435460411082399992
+    second: items_173
+  - first:
+      213: 7885408681318359695
+    second: items_174
+  - first:
+      213: 8561368130231944860
+    second: items_175
+  - first:
+      213: 2968194082416969238
+    second: items_176
+  - first:
+      213: -1042470306147753749
+    second: items_177
+  - first:
+      213: -9130817090286624542
+    second: Oak Slab
+  - first:
+      213: 4807555653334919161
+    second: Spruce Slab
+  - first:
+      213: 3056869423434569188
+    second: Birch Slab
+  - first:
+      213: -3459497016148413627
+    second: Jungle Slab
+  - first:
+      213: -7868066966165509634
+    second: items_182
+  - first:
+      213: 4249666258807903423
+    second: items_183
+  - first:
+      213: -6852758633542660841
+    second: items_184
+  - first:
+      213: 5116142596969959981
+    second: items_185
+  - first:
+      213: 7409123981252767002
+    second: items_186
+  - first:
+      213: -4814700136793304682
+    second: items_187
+  - first:
+      213: -6555833754187840093
+    second: items_188
+  - first:
+      213: 8201081582909886744
+    second: Jungle Stairs
+  - first:
+      213: 6512645012001003500
+    second: Birch Stairs
+  - first:
+      213: 1908792099320402436
+    second: Spruce Stairs
+  - first:
+      213: 5219045542264890561
+    second: items_192
+  - first:
+      213: -5837177561311991975
+    second: items_193
+  - first:
+      213: 433385668791466282
+    second: items_194
+  - first:
+      213: 7977443681283346765
+    second: items_195
+  - first:
+      213: -4754669527154036151
+    second: Flower Pot
+  - first:
+      213: -2708232225190019670
+    second: items_197
+  - first:
+      213: -3099794969598387302
+    second: items_198
+  - first:
+      213: 2163354836892620996
+    second: items_199
+  - first:
+      213: 95058772833327676
+    second: items_200
+  - first:
+      213: 6770572910690203029
+    second: items_201
+  - first:
+      213: 3882832789022649457
+    second: items_202
+  - first:
+      213: -8878694685562031488
+    second: items_203
+  - first:
+      213: -1004743792253187300
+    second: items_204
+  - first:
+      213: 2587855155107634561
+    second: items_205
+  - first:
+      213: -498969519454911232
+    second: items_206
+  - first:
+      213: -7711394430603173151
+    second: items_207
+  - first:
+      213: -3212368913584548517
+    second: items_208
+  - first:
+      213: 2634581254100188468
+    second: items_209
+  - first:
+      213: 3801417226305609865
+    second: items_210
+  - first:
+      213: 7874393127953130763
+    second: items_211
+  - first:
+      213: 9056630653348509452
+    second: items_212
+  - first:
+      213: -6948206339139857546
+    second: items_213
+  - first:
+      213: 2429457697700603145
+    second: items_214
+  - first:
+      213: -5579238883901062570
+    second: items_215
+  - first:
+      213: -2977179857457164796
+    second: items_216
+  - first:
+      213: -3209429344413848919
+    second: items_217
+  - first:
+      213: 7035944541455254544
+    second: items_218
+  - first:
+      213: -6657913739729259365
+    second: items_219
+  - first:
+      213: -6524714282782223981
+    second: items_220
+  - first:
+      213: 3169434119103337190
+    second: items_221
+  - first:
+      213: 5303467171633259579
+    second: items_222
+  - first:
+      213: -4055912437774249039
+    second: Iron Shovel
+  - first:
+      213: -8195587494142681365
+    second: Iron Pickaxe
+  - first:
+      213: -847223144147799035
+    second: Iron Axe
+  - first:
+      213: -7363307940098025192
+    second: Flint and Steel
+  - first:
+      213: -7652257075970667830
+    second: Apple
+  - first:
+      213: 7381558169326551693
+    second: Bow
+  - first:
+      213: 6260659127007101507
+    second: Arrow
+  - first:
+      213: 8594149717606132895
+    second: Coal
+  - first:
+      213: 6759244946866839360
+    second: items_231
+  - first:
+      213: 5244515616369616431
+    second: Diamond
+  - first:
+      213: -3845479819248093833
+    second: Iron Ingot
+  - first:
+      213: -191080983239036974
+    second: Gold Ingot
+  - first:
+      213: -7697943422035235417
+    second: Iron Sword
+  - first:
+      213: 1378875455734331773
+    second: Wooden Sword
+  - first:
+      213: -2008970548212793266
+    second: Wooden Shovel
+  - first:
+      213: -3551775415495820340
+    second: Wooden Pickaxe
+  - first:
+      213: 880747531601085966
+    second: Wooden Axe
+  - first:
+      213: -8402414406139069270
+    second: Stone Sword
+  - first:
+      213: 4269181389663735365
+    second: Stone Shovel
+  - first:
+      213: 6042045879560887766
+    second: Stone Pickaxe
+  - first:
+      213: -5751055401038393160
+    second: Stone Axe
+  - first:
+      213: 5863121150902147412
+    second: Diamond Sword
+  - first:
+      213: 7898442284587706422
+    second: Diamond Shovel
+  - first:
+      213: 2239089160402629893
+    second: Diamond Pickaxe
+  - first:
+      213: 8063166274908954825
+    second: Diamond Axe
+  - first:
+      213: -2839628685392012766
+    second: Stick
+  - first:
+      213: -7109519275558264549
+    second: Bowl
+  - first:
+      213: 5378297296127734944
+    second: Mushroom Stew
+  - first:
+      213: 8767210940616089323
+    second: Golden Sword
+  - first:
+      213: -8033723429876189661
+    second: Golden Shovel
+  - first:
+      213: 1797115407225013134
+    second: Golden Pickaxe
+  - first:
+      213: -854671996359030078
+    second: Golden Axe
+  - first:
+      213: 8179438966543336367
+    second: String
+  - first:
+      213: 6171598609181438139
+    second: Feather
+  - first:
+      213: 8120240302564751247
+    second: Gunpowder
+  - first:
+      213: -980805612476868376
+    second: Wooden Hoe
+  - first:
+      213: -1060939947970621808
+    second: Stone Hoe
+  - first:
+      213: -445417244362737262
+    second: Iron Hoe
+  - first:
+      213: 4643893731308716684
+    second: Diamond Hoe
+  - first:
+      213: 5835186049351072662
+    second: Golden Hoe
+  - first:
+      213: -450361279472710352
+    second: items_263
+  - first:
+      213: 6136987273679336495
+    second: Wheat
+  - first:
+      213: -1256422677136633768
+    second: Bread
+  - first:
+      213: 4424744207402746503
+    second: Iron Helmet
+  - first:
+      213: -8300092254350328241
+    second: Iron Chestplate
+  - first:
+      213: 2392559344560956286
+    second: Iron Leggings
+  - first:
+      213: 9217149113939606522
+    second: Iron Boots
+  - first:
+      213: -1641972083343085278
+    second: items_270
+  - first:
+      213: -5098798191685754696
+    second: items_271
+  - first:
+      213: -6081911586937866497
+    second: items_272
+  - first:
+      213: -5531112312634962606
+    second: items_273
+  - first:
+      213: 683541644967008519
+    second: items_274
+  - first:
+      213: 1629762946634793544
+    second: items_275
+  - first:
+      213: -6756539409642309872
+    second: items_276
+  - first:
+      213: 2761496282796171072
+    second: items_277
+  - first:
+      213: -2452643651453336816
+    second: Diamond Helmet
+  - first:
+      213: -1212122603823474919
+    second: Diamond Chestplate
+  - first:
+      213: 3711129781536342010
+    second: Diamond Leggings
+  - first:
+      213: 8742299254280240975
+    second: Diamond Boots
+  - first:
+      213: 1764615673616170435
+    second: Golden Helmet
+  - first:
+      213: -3656430840982619259
+    second: Golden Chestplate
+  - first:
+      213: 2530256077145114623
+    second: Golden Leggings
+  - first:
+      213: 6374625040168284442
+    second: Golden Boots
+  - first:
+      213: 1389849888674057003
+    second: Flint
+  - first:
+      213: 1419688920513946626
+    second: items_287
+  - first:
+      213: 5714958088803451091
+    second: items_288
+  - first:
+      213: -7734322209070720544
+    second: items_289
+  - first:
+      213: -4850781349598404350
+    second: Golden Apple
+  - first:
+      213: -8966515893708187581
+    second: items_291
+  - first:
+      213: -8646935460526470913
+    second: items_292
+  - first:
+      213: 8046720434674076825
+    second: Bucket
+  - first:
+      213: 8339134907207802950
+    second: items_294
+  - first:
+      213: -8700196332464470029
+    second: items_295
+  - first:
+      213: -741101566140153539
+    second: Minecart
+  - first:
+      213: -1189029685597959389
+    second: items_297
+  - first:
+      213: -8999859454926596933
+    second: items_298
+  - first:
+      213: 7296131321258663700
+    second: Redstone Dust
+  - first:
+      213: 8093776482942797998
+    second: items_300
+  - first:
+      213: 4367303311738571903
+    second: Boat
+  - first:
+      213: 6270936594076553448
+    second: Leather
+  - first:
+      213: 286146971249415325
+    second: items_303
+  - first:
+      213: -845648291306456796
+    second: Brick
+  - first:
+      213: 1532973433821848267
+    second: items_305
+  - first:
+      213: 4166367481640030672
+    second: items_306
+  - first:
+      213: -8516917602417747853
+    second: Paper
+  - first:
+      213: -5147371820058082055
+    second: Book
+  - first:
+      213: -6082515373609937419
+    second: items_309
+  - first:
+      213: -5445964894364698891
+    second: Minecart with Chest
+  - first:
+      213: 3725660825845489998
+    second: items_311
+  - first:
+      213: -773804254923871252
+    second: items_312
+  - first:
+      213: 8679271814344934513
+    second: items_313
+  - first:
+      213: 2912073609765926196
+    second: Fishing Rod
+  - first:
+      213: 2168385262913792458
+    second: items_315
+  - first:
+      213: 1151996310349085916
+    second: items_316
+  - first:
+      213: 7052581004101995152
+    second: items_317
+  - first:
+      213: 8290611470655891339
+    second: items_318
+  - first:
+      213: -6188957306453505083
+    second: items_319
+  - first:
+      213: 1460074766799940719
+    second: items_320
+  - first:
+      213: 4266140228096889736
+    second: items_321
+  - first:
+      213: -7970607787205733082
+    second: items_322
+  - first:
+      213: 4161015639148759634
+    second: items_323
+  - first:
+      213: 4146478380861144844
+    second: items_324
+  - first:
+      213: -5240553382513454499
+    second: items_325
+  - first:
+      213: 2490575410972222643
+    second: items_326
+  - first:
+      213: -8132739989941244476
+    second: items_327
+  - first:
+      213: 5028253573829169951
+    second: items_328
+  - first:
+      213: 8615779234747623787
+    second: items_329
+  - first:
+      213: 2671944909483971029
+    second: items_330
+  - first:
+      213: 3023603986270384678
+    second: items_331
+  - first:
+      213: 4086494821270395366
+    second: items_332
+  - first:
+      213: 9216477913858037417
+    second: items_333
+  - first:
+      213: -3202399762542200801
+    second: items_334
+  - first:
+      213: -4598683759588099128
+    second: items_335
+  - first:
+      213: 2924082833364022499
+    second: Sugar
+  - first:
+      213: 7381098287199411613
+    second: Cake
+  - first:
+      213: -4054753285540378864
+    second: items_338
+  - first:
+      213: -1550823004853703030
+    second: items_339
+  - first:
+      213: 2678242416020196551
+    second: items_340
+  - first:
+      213: -8268699542189141201
+    second: items_341
+  - first:
+      213: 8759925489627241989
+    second: items_342
+  - first:
+      213: -8936651753435074890
+    second: items_343
+  - first:
+      213: -1709904686869257439
+    second: items_344
+  - first:
+      213: 1297179670066618362
+    second: items_345
+  - first:
+      213: -7400096129628018665
+    second: items_346
+  - first:
+      213: 5745471250156285955
+    second: items_347
+  - first:
+      213: 5490438734745699169
+    second: items_348
+  - first:
+      213: 5284148489106364088
+    second: items_349
+  - first:
+      213: 3740597813949488421
+    second: items_350
+  - first:
+      213: -4198392361008192575
+    second: items_351
+  - first:
+      213: -7442230419296315590
+    second: items_352
+  - first:
+      213: 6836836690021760010
+    second: items_353
+  - first:
+      213: 6961052296743540963
+    second: items_354
+  - first:
+      213: 2169329336577319213
+    second: items_355
+  - first:
+      213: 3139220377683451641
+    second: items_356
+  - first:
+      213: 4933670154587108118
+    second: items_357
+  - first:
+      213: -3812499944233755091
+    second: items_358
+  - first:
+      213: -4876027202037935597
+    second: items_359
+  - first:
+      213: 8450944001342072542
+    second: items_360
+  - first:
+      213: 8865171832564872112
+    second: items_361
+  - first:
+      213: 8601922831683378393
+    second: items_362
+  - first:
+      213: -4271978834969654135
+    second: items_363
+  - first:
+      213: 7209923129521014525
+    second: items_364
+  - first:
+      213: -854157718332547543
+    second: items_365
+  - first:
+      213: -7050989967854728167
+    second: items_366
+  - first:
+      213: -5333991863501441072
+    second: items_367
+  - first:
+      213: -4203038676746835241
+    second: items_368
+  - first:
+      213: 3069537194434861072
+    second: items_369
+  - first:
+      213: -3832751082583364397
+    second: items_370
+  - first:
+      213: 765152948344349382
+    second: items_371
+  - first:
+      213: 5798521364171964726
+    second: items_372
+  - first:
+      213: 1012895200611682718
+    second: items_373
+  - first:
+      213: -7966343855613475942
+    second: items_374
+  - first:
+      213: 7742678285477909250
+    second: items_375
+  - first:
+      213: 3993594870407679656
+    second: items_376
+  - first:
+      213: 6973324125374103323
+    second: items_377
+  - first:
+      213: 1133900110392543559
+    second: items_378
+  - first:
+      213: 1159583315976905830
+    second: items_379
+  - first:
+      213: 535773197103512584
+    second: items_380
+  - first:
+      213: -3444575883027287876
+    second: items_381
+  - first:
+      213: -761752390290578199
+    second: items_382
+  - first:
+      213: 5799733904293488578
+    second: items_383
+  - first:
+      213: 7438237127028608064
+    second: items_384
+  - first:
+      213: -6670758169750310474
+    second: items_385
+  - first:
+      213: -115493111353823469
+    second: items_386
+  - first:
+      213: 3829463662553415350
+    second: items_387
+  - first:
+      213: 2400554841707969319
+    second: items_388
+  - first:
+      213: -8842172147353374433
+    second: items_389
+  - first:
+      213: -7109787833242692756
+    second: items_390
+  - first:
+      213: 9153430794797006920
+    second: items_391
+  - first:
+      213: 503826213302810968
+    second: items_392
+  - first:
+      213: 6098997524722162464
+    second: items_393
+  - first:
+      213: -7919678927269404978
+    second: items_394
+  - first:
+      213: -8787760491722128426
+    second: items_395
+  - first:
+      213: 5761384702533998801
+    second: items_396
+  - first:
+      213: -7086300975367418893
+    second: items_397
+  - first:
+      213: -1464520030474984278
+    second: items_398
+  - first:
+      213: 7953891028953102327
+    second: items_399
+  - first:
+      213: -457200310165206015
+    second: items_400
+  - first:
+      213: -7204410935331110200
+    second: items_401
+  - first:
+      213: -4463534143745720843
+    second: items_402
+  - first:
+      213: 2747024013219368224
+    second: items_403
+  - first:
+      213: 8983166035116825084
+    second: items_404
+  - first:
+      213: -8934920245563138270
+    second: items_405
+  - first:
+      213: 1264728007664539966
+    second: items_406
+  - first:
+      213: -8795856563667273506
+    second: items_407
+  - first:
+      213: 4983296268703097083
+    second: items_408
+  - first:
+      213: 7007366747751123814
+    second: items_409
+  - first:
+      213: 6987896011556857087
+    second: Carrot on a Stick
+  - first:
+      213: 8496477730032426497
+    second: items_411
+  - first:
+      213: 5100755664229090458
+    second: items_412
+  - first:
+      213: -2402580199958612379
+    second: items_413
+  - first:
+      213: -3761027240579630055
+    second: items_414
+  - first:
+      213: -3294951764129422051
+    second: items_415
+  - first:
+      213: 995369187990081311
+    second: items_416
+  - first:
+      213: 711342575409631496
+    second: items_417
+  - first:
+      213: 4888288280702862613
+    second: items_418
+  - first:
+      213: 2161797297704313649
+    second: items_419
+  - first:
+      213: -5733325405798112822
+    second: items_420
+  - first:
+      213: 4742610913998726697
+    second: items_421
+  - first:
+      213: 4745857232031159418
+    second: items_422
+  - first:
+      213: -3977143164366768003
+    second: items_423
+  - first:
+      213: 740971441346255140
+    second: items_424
+  - first:
+      213: 4032940882523891445
+    second: items_425
+  - first:
+      213: 1712523545503791402
+    second: items_426
+  - first:
+      213: 1524621498492790576
+    second: items_427
+  - first:
+      213: 4917993754747578248
+    second: items_428
+  - first:
+      213: 8940039096733122278
+    second: items_429
+  - first:
+      213: 7985252926927276483
+    second: items_430
+  - first:
+      213: 7790947754745110486
+    second: items_431
+  - first:
+      213: 828957750669127900
+    second: items_432
+  - first:
+      213: -6753286902530435447
+    second: items_433
+  - first:
+      213: 7288949174074299249
+    second: items_434
+  - first:
+      213: -5516821980901825581
+    second: items_435
+  - first:
+      213: -5642573857717976832
+    second: items_436
+  - first:
+      213: 3796489100389660161
+    second: items_437
+  - first:
+      213: 1676236220936365081
+    second: items_438
+  - first:
+      213: 6567214875849102213
+    second: items_439
+  - first:
+      213: -2187447107951380143
+    second: items_440
+  - first:
+      213: -5792654473894178487
+    second: items_441
+  - first:
+      213: -2046016510541441267
+    second: items_442
+  - first:
+      213: -2843943796175092640
+    second: items_443
+  - first:
+      213: -5870763446048592751
+    second: items_444
+  - first:
+      213: 1033338172754276065
+    second: items_445
+  - first:
+      213: -4165837399384896
+    second: items_446
+  - first:
+      213: 4054017689891079718
+    second: items_447
+  - first:
+      213: 3980215088273198221
+    second: items_448
+  - first:
+      213: 5221261528767227152
+    second: items_449
+  - first:
+      213: -4600056804141198304
+    second: items_450
+  - first:
+      213: 1448115584345307087
+    second: items_451
+  - first:
+      213: -4321599608820138465
+    second: items_452
+  - first:
+      213: -1692159270808322088
+    second: items_453
+  - first:
+      213: 26375228327268728
+    second: items_454
+  - first:
+      213: 6672258194887452772
+    second: items_455
+  - first:
+      213: 712770095735144537
+    second: items_456
+  - first:
+      213: -2459761157152884115
+    second: items_457
+  - first:
+      213: -4569544907342787109
+    second: items_458
+  - first:
+      213: 4677411859667571692
+    second: items_459
+  - first:
+      213: 6757401772511056210
+    second: items_460
+  - first:
+      213: -8735997772813075724
+    second: items_461
+  - first:
+      213: -2408698895178194091
+    second: items_462
+  - first:
+      213: -5498900155024807301
+    second: items_463
+  - first:
+      213: -4327019342574476821
+    second: items_464
+  - first:
+      213: -6204043796434718884
+    second: items_465
+  - first:
+      213: 1721487702570132603
+    second: items_466
+  - first:
+      213: -3698201893072628975
+    second: items_467
+  - first:
+      213: -2529514117045037367
+    second: items_468
+  - first:
+      213: -1067932257919742528
+    second: items_469
+  - first:
+      213: 378123135068430599
+    second: items_470
+  - first:
+      213: -213097152257381784
+    second: items_471
+  - first:
+      213: 3670791155147963207
+    second: items_472
+  - first:
+      213: 1036109679241242703
+    second: items_473
+  - first:
+      213: 3742292188532880695
+    second: items_474
+  - first:
+      213: -5414132469616677289
+    second: items_475
+  - first:
+      213: 4147303276082007070
+    second: items_476
+  - first:
+      213: -3570570845452293903
+    second: items_477
+  - first:
+      213: -5176532272986021294
+    second: items_478
+  - first:
+      213: -3524929786240296144
+    second: items_479
+  - first:
+      213: -5236793497924482516
+    second: items_480
+  - first:
+      213: -3252169936697947418
+    second: items_481
+  - first:
+      213: 3693710337652955437
+    second: items_482
+  - first:
+      213: 1917088870099355891
+    second: items_483
+  - first:
+      213: 697170242570206012
+    second: items_484
+  - first:
+      213: 7337090056181788530
+    second: items_485
+  - first:
+      213: 7120748060968025279
+    second: items_486
+  - first:
+      213: -3945505725268645602
+    second: items_487
+  - first:
+      213: -1883051322177598707
+    second: items_488
+  - first:
+      213: 2300444729951169170
+    second: items_489
+  - first:
+      213: -4726528686896563782
+    second: items_490
+  - first:
+      213: -4284570429258033207
+    second: items_491
+  - first:
+      213: 5827975116637966320
+    second: items_492
+  - first:
+      213: -7241735404067600482
+    second: items_493
+  - first:
+      213: -615650627435520071
+    second: items_494
+  - first:
+      213: -5571018925586233221
+    second: items_495
+  - first:
+      213: 7919256178185664345
+    second: items_496
+  - first:
+      213: -3905938295601315081
+    second: items_497
+  - first:
+      213: -3679756194174277056
+    second: items_498
+  - first:
+      213: -1383271970530752186
+    second: items_499
+  - first:
+      213: -1489601514287152859
+    second: items_500
+  - first:
+      213: -3109178290576580982
+    second: items_501
+  - first:
+      213: -1391813726833809230
+    second: items_502
+  - first:
+      213: -2721501935111985281
+    second: items_503
+  - first:
+      213: -1281984306983750740
+    second: items_504
+  - first:
+      213: 6625936295578624033
+    second: items_505
+  - first:
+      213: 3829546549943641506
+    second: items_506
+  - first:
+      213: -2822060342232978386
+    second: items_507
+  - first:
+      213: -995250648803063008
+    second: items_508
+  - first:
+      213: -8003260555133714001
+    second: items_509
+  - first:
+      213: 2640598902284444366
+    second: items_510
+  - first:
+      213: 3474817920357324830
+    second: items_511
+  - first:
+      213: -1450010183653309561
+    second: items_512
+  - first:
+      213: 8568203453926400447
+    second: items_513
+  - first:
+      213: -2296365660461717556
+    second: items_514
+  - first:
+      213: -6783299428666204218
+    second: items_515
+  - first:
+      213: 8766833222267159328
+    second: items_516
+  - first:
+      213: -8123648074967088676
+    second: items_517
+  - first:
+      213: 974936817420322865
+    second: items_518
+  - first:
+      213: 1171690606228306667
+    second: items_519
+  - first:
+      213: -6213697387902785397
+    second: items_520
+  - first:
+      213: -606524302175963773
+    second: items_521
+  - first:
+      213: 7904092916829204779
+    second: items_522
+  - first:
+      213: -738106507204156507
+    second: items_523
+  - first:
+      213: -3266598377763078146
+    second: items_524
+  - first:
+      213: -7719942264949628171
+    second: items_525
+  - first:
+      213: -1089995487640198933
+    second: items_526
+  - first:
+      213: -5818786242290147285
+    second: items_527
+  - first:
+      213: -675489737583455780
+    second: items_528
+  - first:
+      213: -48520355484137187
+    second: items_529
+  - first:
+      213: 4911703877738573233
+    second: items_530
+  - first:
+      213: -6333473122323235667
+    second: items_531
+  - first:
+      213: -7261919428962407866
+    second: items_532
+  - first:
+      213: -8255200181551979688
+    second: items_533
+  - first:
+      213: 2088925203464952261
+    second: items_534
+  - first:
+      213: -749462538752024495
+    second: items_535
+  - first:
+      213: -8741751460471926370
+    second: items_536
+  - first:
+      213: 228365823761184824
+    second: items_537
+  - first:
+      213: 8879486800988157584
+    second: items_538
+  - first:
+      213: -4278425297730153586
+    second: items_539
+  - first:
+      213: -71926907317141229
+    second: items_540
+  - first:
+      213: 6326949976044840634
+    second: items_541
+  - first:
+      213: 1370096506591381641
+    second: items_542
+  - first:
+      213: 7661312275469411545
+    second: items_543
+  - first:
+      213: 806108268692124580
+    second: items_544
+  - first:
+      213: -2223582973887887845
+    second: items_545
+  - first:
+      213: 3334118480811038739
+    second: items_546
+  - first:
+      213: -4207150794009953333
+    second: items_547
+  - first:
+      213: -3940995835966620030
+    second: items_548
+  - first:
+      213: -8061712299280649767
+    second: items_549
+  - first:
+      213: -5157480763528475103
+    second: items_550
+  - first:
+      213: -8096858041858785518
+    second: items_551
+  - first:
+      213: 1512225229392735128
+    second: items_552
+  - first:
+      213: -6126610880344455278
+    second: items_553
+  - first:
+      213: 6794932389584435444
+    second: items_554
+  - first:
+      213: 7923501898684129100
+    second: items_555
+  - first:
+      213: -2693085765193115012
+    second: items_556
+  - first:
+      213: -6672849166794428683
+    second: items_557
+  - first:
+      213: 8515482062828170834
+    second: items_558
+  - first:
+      213: -5813382842205922690
+    second: items_559
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: White Wool
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914579027bb74dd50800000000000000
+      internalID: 6761164967045977113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oak Planks
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0d00c53032ba4b0800000000000000
+      internalID: -5428206428529569624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birch Planks
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3376eda6ddf25150800000000000000
+      internalID: 5860025163644826426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oak Log
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1056
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addc1f73707051570800000000000000
+      internalID: 8436657204533251546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birch Log
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1056
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bff8df7593333850800000000000000
+      internalID: 6355480216337973169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glass
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1056
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec98a4c1c7a299c90800000000000000
+      internalID: -7162647019817104946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bed
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1024
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5329faa342ae8b100800000000000000
+      internalID: 124106431076995637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TNT
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c977d724ec1f10d0800000000000000
+      internalID: -3450007023295956540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54cc649feb1006200800000000000000
+      internalID: 171138705577659461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bedf57b9a214f80800000000000000
+      internalID: -8124165405611791505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oak Stairs
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c0b640d09ee1f00800000000000000
+      internalID: 1089564401988209714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54a206c3108572f0800000000000000
+      internalID: -975732921841048486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crafting Table
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65a5ef61973edf40800000000000000
+      internalID: 5755098471613179246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ladder
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1da52810e28d0b0800000000000000
+      internalID: -5703758344047898144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rail
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbf5a001741d5a90800000000000000
+      internalID: -7323674943459820596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redstone Torch
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 864
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204b08aa417568db0800000000000000
+      internalID: -4790045407390419966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glass Pane
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 800
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ce505e1d5ddbf80800000000000000
+      internalID: -8089074258220290989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oak Slab
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 736
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e06668cb32d84180800000000000000
+      internalID: -9130817090286624542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birch Slab
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 736
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5129c6b8e2c6a20800000000000000
+      internalID: 3056869423434569188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birch Stairs
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 736
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce71a880220916a50800000000000000
+      internalID: 6512645012001003500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron Shovel
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b39062802186b7c0800000000000000
+      internalID: -4055912437774249039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron Pickaxe
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beeddfd989c634e80800000000000000
+      internalID: -8195587494142681365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron Axe
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504b4970a0f0e34f0800000000000000
+      internalID: -847223144147799035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Apple
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca8cc89bb8bdc590800000000000000
+      internalID: -7652257075970667830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bow
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82879bbb00907660800000000000000
+      internalID: 7381558169326551693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342c01d3e4452e650800000000000000
+      internalID: 6260659127007101507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coal
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cef6862ad844770800000000000000
+      internalID: 8594149717606132895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2623bc9a2348c840800000000000000
+      internalID: 5244515616369616431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron Ingot
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775b8c68a7c12aac0800000000000000
+      internalID: -3845479819248093833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron Sword
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ade88c3e396b2590800000000000000
+      internalID: -7697943422035235417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden Sword
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79bc80ebefb22310800000000000000
+      internalID: 1378875455734331773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden Shovel
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e400e8d2ee3be14e0800000000000000
+      internalID: -2008970548212793266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden Pickaxe
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbf765e31f85bec0800000000000000
+      internalID: -3551775415495820340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden Axe
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0682eda63b093c00800000000000000
+      internalID: 880747531601085966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Sword
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4591a926f9dfd5150800000000000000
+      internalID: 5863121150902147412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Shovel
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63866cbf867ec9d60800000000000000
+      internalID: 7898442284587706422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Pickaxe
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505f93a6ab7d21f10800000000000000
+      internalID: 2239089160402629893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Axe
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0abdca10f16ef60800000000000000
+      internalID: 8063166274908954825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stick
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a133171cc9798d0800000000000000
+      internalID: -2839628685392012766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bowl
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11ae8003e9e55d90800000000000000
+      internalID: -7109519275558264549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom Stew
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 608
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4332835ec83aa40800000000000000
+      internalID: 5378297296127734944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: String
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 607
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3cdce4764338170800000000000000
+      internalID: 8179438966543336367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Feather
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0fd8c8c3ce5a550800000000000000
+      internalID: 6171598609181438139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunpowder
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87be254883e0b070800000000000000
+      internalID: 8120240302564751247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden Hoe
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e85b92fd7a7362f0800000000000000
+      internalID: -980805612476868376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron Hoe
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299fcec406f81d9f0800000000000000
+      internalID: -445417244362737262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Hoe
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82c1558ebc627040800000000000000
+      internalID: 4643893731308716684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wheat
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24ffb60965fa2550800000000000000
+      internalID: 6136987273679336495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bread
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85096816b3a409ee0800000000000000
+      internalID: -1256422677136633768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron Helmet
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7824530d969d76d30800000000000000
+      internalID: 4424744207402746503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron Chestplate
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e3a78021620dc80800000000000000
+      internalID: -8300092254350328241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron Leggings
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73e89c2c04143120800000000000000
+      internalID: 2392559344560956286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron Boots
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb3d2ad844e9ef70800000000000000
+      internalID: 9217149113939606522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Helmet
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013c18af79576fdd0800000000000000
+      internalID: -2452643651453336816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Chestplate
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91751e6f9ecad2fe0800000000000000
+      internalID: -1212122603823474919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Leggings
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affb8d7bfd4908330800000000000000
+      internalID: 3711129781536342010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Boots
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f39836ad2e25970800000000000000
+      internalID: 8742299254280240975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bucket
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c00ab1a91bbaf60800000000000000
+      internalID: 8046720434674076825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minecart
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d310bb75d0417b5f0800000000000000
+      internalID: -741101566140153539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redstone Dust
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f5936b7c0114560800000000000000
+      internalID: 7296131321258663700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boat
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c809a1937cb9c30800000000000000
+      internalID: 4367303311738571903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Book
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f405920a9cd098b0800000000000000
+      internalID: -5147371820058082055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing Rod
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43533ede483c96820800000000000000
+      internalID: 2912073609765926196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carrot on a Stick
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff42738266ef9f060800000000000000
+      internalID: 6987896011556857087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carrot
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a9907824ce27c40800000000000000
+      internalID: 5508725064705088119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Mushroom
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188d3321baebb0ff0800000000000000
+      internalID: -68751727340038015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Milk Bucket
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02615a1d0116a450800000000000000
+      internalID: 6099581493293703690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652dc55e5a5394390800000000000000
+      internalID: -7833671090200325546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sugar
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffe9da396152c690800000000000000
+      internalID: -7583409310137716746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cake
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7354d6800163a9d00800000000000000
+      internalID: 980155311395259703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1056
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d25107f0f526d5f0800000000000000
+      internalID: -732356172534689064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Mushroom
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff372786e90ed070800000000000000
+      internalID: 8132948862792318974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5620f48440ac8124e8d18b5974196fb3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
