@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ *  아이템 추가 버튼 세팅 용도 스크립트
+ */
+
+
 public class SetItem : MonoBehaviour
 {
     public GameObject m_ItemBtn = null;     // 아이템 버튼 프로토타입
@@ -15,14 +20,14 @@ public class SetItem : MonoBehaviour
         // 재료 아이템 개수 만큼 버튼 생성
         foreach (var itemInfo in tempItemsInfo)
         {
-            if (!itemInfo.m_IsMaterial) continue;                           // 재료 아이템이 아니면 continue
+            // 재료 아이템이 아니면 continue
+            if (!itemInfo.m_IsMaterial) continue;
 
-            UIManager.GetInstance.GenerateObject(m_ItemBtn,
-                                                 itemInfo.m_ItemSprite,
-                                                 string.Format($"Add Item [{itemInfo.m_ItemName}]"),
-                                                 this.transform);           // 아이템 버튼 생성
+            // 아이템 버튼 생성
+            UIManager.GetInstance.GenerateObject(m_ItemBtn, itemInfo, this.transform);
         }
-        
-        m_ItemBtn.SetActive(false);                                         // 프로토 타입 비활성화
+
+        // 프로토 타입 비활성화
+        m_ItemBtn.SetActive(false);
     }
 }
