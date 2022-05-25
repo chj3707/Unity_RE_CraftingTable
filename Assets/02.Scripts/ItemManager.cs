@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
- *  아이템 정보를 저장하고
+ *  아이템 정보들 저장 (Dictionary)
  *  정보를 가져갈 때 사용할 스크립트
  */
 

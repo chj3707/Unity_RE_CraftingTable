@@ -15,7 +15,6 @@ public class SetItem : MonoBehaviour
     {
         // 아이템들 정보 가져오기
         Dictionary<string, Item>.ValueCollection tempItemsInfo = ItemManager.GetInstance.m_ItemDic.Values;
-        int itemTotalCount = tempItemsInfo.Count;
 
         // 재료 아이템 개수 만큼 버튼 생성
         foreach (var itemInfo in tempItemsInfo)

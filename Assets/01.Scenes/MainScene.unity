@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &113565015
 RectTransform:
   m_ObjectHideFlags: 0
@@ -435,10 +435,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 326989617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c03c978eabfb04586a51e33b952439, type: 3}
+  m_Script: {fileID: 11500000, guid: 21ace6cfce1ae52429fc813f261ef643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SlotObj: {fileID: 1866814994}
+  m_SlotPrefab: {fileID: 1866814994}
   m_SlotCount: 27
 --- !u!1 &705507993
 GameObject:
@@ -1249,6 +1249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0f62c402b3095244b70e4f7f1de643f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_CraftingTablePanel: {fileID: 113565014}
 --- !u!4 &1687346176
 Transform:
   m_ObjectHideFlags: 0
@@ -1377,7 +1378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9a586684f54c764985a98ceb532ac95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CraftingTablePanel: {fileID: 113565014}
 --- !u!4 &1907167863
 Transform:
   m_ObjectHideFlags: 0
@@ -1622,7 +1622,7 @@ GameObject:
   - component: {fileID: 2125847352}
   - component: {fileID: 2125847353}
   m_Layer: 5
-  m_Name: Crafting
+  m_Name: Crafting Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1680,10 +1680,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2125847350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c03c978eabfb04586a51e33b952439, type: 3}
+  m_Script: {fileID: 11500000, guid: c816b6cda605e3d48a6f47c92285c5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SlotObj: {fileID: 1866814994}
+  m_SlotPrefab: {fileID: 1866814994}
   m_SlotCount: 9
 --- !u!1001 &3705685736699950999
 PrefabInstance:
@@ -1784,6 +1784,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3705685737698086048, guid: 116fac872e08bf141b1532bce5102778, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705685737698086048, guid: 116fac872e08bf141b1532bce5102778, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705685737698086048, guid: 116fac872e08bf141b1532bce5102778, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705685737698086049, guid: 116fac872e08bf141b1532bce5102778, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705685737698086049, guid: 116fac872e08bf141b1532bce5102778, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -31
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 116fac872e08bf141b1532bce5102778, type: 3}
 --- !u!1001 &4573595938519855473
@@ -1797,6 +1817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Add Item
       objectReference: {fileID: 0}
+    - target: {fileID: 4573595938393945611, guid: 1b0a391552c399d44bcf98f9f7c37d62, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1907167862}
     - target: {fileID: 4573595938393945612, guid: 1b0a391552c399d44bcf98f9f7c37d62, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
