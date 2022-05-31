@@ -22,27 +22,32 @@ public class Inventory : MonoBehaviour
     public static void AddItemToInventory(Item p_item)
     {
         IEnumerator<Slot> enumerator = m_SlotList.GetEnumerator();  // 리스트 열거자 선언
+        int ItemStack = 0;
 
-        while(enumerator.MoveNext())
+        while (enumerator.MoveNext())
         {
-            Slot tempSlot = enumerator.Current;                     // 현재 확인할 슬롯
+            Slot currSlot = enumerator.Current;                     // 현재 확인할 슬롯
+            Item currItem = currSlot.GetItemInfo();                 // 슬롯에 있는 아이템 정보
+            if (ItemStack == 0)
+                ItemStack = p_item.m_IsStackable ? MaxItemStack.Stackable : MaxItemStack.NonStackable;
 
             /* 
              *  재료 아이템 추가 조건
              *  1.슬롯이 비어 있다.
              *  2.추가할 아이템과 같은 아이템 이고, 아이템 스택이 가득 차 있지 않다.
              */
-            if (tempSlot.GetItemInfo() == null ||
-                tempSlot.GetItemInfo() == p_item && !tempSlot.IsItemStackFull())
+            if (currItem == null ||
+                currItem == p_item && !currSlot.IsItemStackFull())
             {
-                int maxItemStack = p_item.m_IsStackable ? MaxItemStack.Stackable : MaxItemStack.NonStackable;
-
-                for (int i = 0; i < maxItemStack; i++)
+                while(!currSlot.IsItemStackFull())
                 {
-                    tempSlot.m_ItemStack.Push(p_item);  // 슬롯에 재료 아이템 추가
+                    currSlot.m_ItemStack.Push(p_item);  // 슬롯에 재료 아이템 추가
+                    --ItemStack;
+                    if (ItemStack == 0) break;
                 }
-                tempSlot.UpdateUI();                    // 슬롯 UI 업데이트
-                break;
+
+                currSlot.UpdateUI();                    // 슬롯 UI 업데이트
+                if(ItemStack == 0) break;
             }
         }
     }
