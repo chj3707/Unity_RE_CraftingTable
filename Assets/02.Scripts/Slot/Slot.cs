@@ -54,7 +54,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler
         p_slot.m_ItemImage.enabled = true;
         p_slot.m_ItemImage.sprite = currItem.m_ItemSprite;
         // 쌓을 수 있는 아이템만 개수 표시
-        if (currItem.m_IsStackable) p_slot.m_ItemCount.enabled = true;
+        p_slot.m_ItemCount.enabled = currItem.m_IsStackable ? true : false;
         p_slot.m_ItemCount.text = p_slot.m_ItemStack.Count.ToString();
     }
 
@@ -62,6 +62,12 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     public int GetItemStackCount(Slot p_slot)
     {
         return p_slot.m_ItemStack.Count;
+    }
+
+    // 슬롯에 있는 아이템의 최대 개수 가져가는 용도
+    public int GetMaxItemStackInSlot(Slot p_slot)
+    {
+        return p_slot.GetItemInfo(p_slot).m_IsStackable ? MaxItemStack.Stackable : MaxItemStack.NonStackable;
     }
 
     // 슬롯에 있는 아이템 정보 가져가는 용도
@@ -100,8 +106,8 @@ public class Slot : MonoBehaviour, IPointerClickHandler
      * 
      * 4. 드래그 중에 아이템이 있는 슬롯 클릭
      * 4-1. 슬롯에 있는 아이템과 드래그 중인 아이템이 다른 경우 :: 아이템 스왑
-     * 4-2. 아이템이 같은 경우 슬롯 좌 클릭 :: 슬롯의 아이템 최대 개수 만큼 채우고 나머지 드래그
-     * 4-3. 아이템이 같은 경우 슬롯 우 클릭 :: 슬롯의 아이템이 최대 개수가 아니면 1개 채우기
+     * 4-2. 아이템이 같은 경우 슬롯 좌 클릭 :: 슬롯의 아이템 최대 개수 만큼 드랍 나머지 드래그
+     * 4-3. 아이템이 같은 경우 슬롯 우 클릭 :: 슬롯의 아이템이 최대 개수가 아니면 1개 드랍
      * 
      */
     public void OnPointerClick(PointerEventData eventData)
@@ -177,14 +183,35 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
         switch (p_eventData.pointerId)
         {
-            // 좌 클릭 :: 슬롯에 드래그 중인 아이템 모두 드랍
+            /*
+             * 좌 클릭
+             * 1. 빈 슬롯 :: 드래그 중인 아이템 모두 드랍
+             * 2. 아이템 있는 슬롯 :: 슬롯의 아이템 최대 개수만큼 드랍
+             */
             case -1:
-                DropItemStackSize = draggingItem.m_ItemStack.Count;
+                if (this.IsSlotEmpty(this))
+                {
+                    DropItemStackSize = draggingItem.m_ItemStack.Count;
+                }
+                else
+                {
+                    int draggingItemCount = GetItemStackCount(draggingItem);
+                    int requiredItemCount = this.GetMaxItemStackInSlot(this) - this.GetItemStackCount(this);
+                    
+                    if (draggingItemCount >= requiredItemCount)
+                        DropItemStackSize = requiredItemCount;
+                    else
+                        DropItemStackSize = draggingItemCount;
+                }
                 break;
 
             // 우 클릭 :: 슬롯에 아이템 1개 드랍
             case -2:
-                DropItemStackSize = 1;
+                if(this.IsSlotEmpty(this) ||
+                   this.GetItemStackCount(this) < this.GetMaxItemStackInSlot(this))
+                {
+                    DropItemStackSize = 1;
+                }       
                 break;
         }
 
@@ -203,5 +230,20 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     {
         DraggingItem draggingItem = p_eventManager.m_DraggingItem.GetComponent<DraggingItem>();
 
+        // 드래그 아이템과 슬롯 아이템 정보 비교
+        switch(GetItemInfo(draggingItem) == GetItemInfo(this))
+        {
+            // 같은 아이템 :: 아이템 드랍
+            case true:
+                ItemsDrop(p_eventData, p_eventManager);
+                break;
+
+            // 다른 아이템 :: 드래그 아이템과 슬롯 아이템 데이터 스왑
+            case false:
+                Core.Swap<Stack<Item>>(ref draggingItem.m_ItemStack, ref this.m_ItemStack);
+                this.UpdateUI(draggingItem);
+                this.UpdateUI(this);
+                break;
+        }
     }
 }

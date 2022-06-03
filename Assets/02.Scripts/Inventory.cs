@@ -50,7 +50,7 @@ public class Inventory : MonoBehaviour
                 }
             }
             currSlot.UpdateUI(currSlot);                   // 슬롯 UI 업데이트
-            if (itemStack == 0) break;                     // 채울 아이템 개수가 0이면 종료
+            if (itemStack == 0) break;                     // 추가할 아이템이 0개 이면 종료
         }
     }
 }
