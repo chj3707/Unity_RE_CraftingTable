@@ -310,7 +310,7 @@ TextureImporter:
     second: Block of Diamond
   - first:
       213: 5755098471613179246
-    second: Crafting Table
+    second: Workbench
   - first:
       213: -3718929783938772351
     second: items_103
@@ -2023,7 +2023,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crafting Table
+      name: Workbench
       rect:
         serializedVersion: 2
         x: 192

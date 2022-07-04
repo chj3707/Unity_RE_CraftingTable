@@ -9,41 +9,62 @@ using UnityEngine.UI;
 
 public class UIManager : Singleton_Mono<UIManager>
 {
-    public GameObject m_CraftingTablePanel = null;     // 작업대 BG
+    public GameObject workbench_panel_obj = null; 
 
     void Start()
     {
-        m_CraftingTablePanel.SetActive(false);
+        initialize();
+    }
+
+    private void initialize()
+    {
+        if (true == workbench_panel_obj.activeSelf) workbench_panel_obj.SetActive(false);
     }
 
     // 게임오브젝트 [비활성화 -> 활성화 , 활성화 -> 비활성화] 처리
-    public void GameObjectSetActive(GameObject p_obj)
+    public void set_gameobject_active(GameObject request_object)
     {
-        if (p_obj.activeSelf) p_obj.SetActive(false);
-        else p_obj.SetActive(true);
+        if (true == request_object.activeSelf) request_object.SetActive(false);
+        else request_object.SetActive(true);
     }
 
-    // 사용처 :: 아이템 추가 버튼
-    public void GenerateObject(GameObject p_object, Item p_itemInfo, Transform p_parent)
+    // 사용처 :: 아이템 추가 버튼 생성
+    public void generate_gameobject(GameObject request_object, Item item_info, Transform parent_transform)
     {
-        GameObject copyObj = GameObject.Instantiate(p_object);               // 복사
-        copyObj.SetActive(true);                                             // 활성화
-        copyObj.GetComponent<ItemInfo>().m_ItemInfo = p_itemInfo;            // 아이템 정보 설정
-        copyObj.GetComponent<Image>().sprite = p_itemInfo.m_ItemSprite;      // 스프라이트 설정
-        copyObj.name = string.Format($"Add Item [{p_itemInfo.m_ItemName}]"); // 이름 설정
-        copyObj.transform.SetParent(p_parent);                               // 부모 오브젝트 설정
+        GameObject copy_object = GameObject.Instantiate(request_object);        
+        copy_object.SetActive(true);                                            
+        copy_object.GetComponent<ItemInfo>().item_info = item_info;              
+        copy_object.GetComponent<Image>().sprite = item_info.item_sprite;        
+        copy_object.name = string.Format($"Add Item [{item_info.item_name}]");  
+        copy_object.transform.SetParent(parent_transform);                      
     }
 
-    // 사용처 :: 슬롯
-    public void GenerateObject(GameObject p_object, int p_copyCnt, Transform p_parent, ref LinkedList<Slot> p_slotList)
+    // 사용처 :: 인벤토리 슬롯 생성
+    public void generate_gameobject(GameObject request_object, int copy_count, Transform parent_transform, ref List<InventorySlot> slot_list)
     {
-        for (int i = 0; i < p_copyCnt; i++)
+        for (int i = 0; i < copy_count; i++)
         {
-            GameObject copyObj = GameObject.Instantiate(p_object);    // 복사
-            copyObj.SetActive(true);                                  // 활성화
-            copyObj.name = string.Format($"Slot_{i + 1} ");           // 이름 설정
-            copyObj.transform.SetParent(p_parent);                    // 부모 오브젝트 설정
-            p_slotList.AddLast(copyObj.GetComponent<Slot>());         // 리스트에 추가
+            GameObject copy_object = GameObject.Instantiate(request_object);    
+            copy_object.SetActive(true);                                        
+            copy_object.name = string.Format($"Slot_{i + 1} ");                 
+            copy_object.transform.SetParent(parent_transform);                  
+            slot_list.Add(copy_object.GetComponent<InventorySlot>());           
+        }
+    }
+
+    // 사용처 :: 제작대 슬롯 생성
+    public void generate_gameobject(GameObject request_object, int row, int col, Transform parent_transform, ref WorkbenchSlot[,] workbench)
+    {
+        for (int y = 0; y < row; y++)
+        {
+            for (int x = 0; x < col; x++)
+            {
+                GameObject copy_object = GameObject.Instantiate(request_object);
+                copy_object.SetActive(true);                                
+                copy_object.name = string.Format($"Slot_[{y},{x}]");        
+                copy_object.transform.SetParent(parent_transform);          
+                workbench[y, x] = copy_object.GetComponent<WorkbenchSlot>();
+            }
         }
     }
 }

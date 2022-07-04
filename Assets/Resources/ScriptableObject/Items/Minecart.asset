@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 171fa09cc039cf146a571461383c8075, type: 3}
   m_Name: Minecart
   m_EditorClassIdentifier: 
-  m_ItemName: Minecart
-  m_ItemType: 3
-  m_ItemSprite: {fileID: -741101566140153539, guid: ea230a4bc9197144bad0a286cb4fa803, type: 3}
-  m_IsStackable: 0
-  m_IsMaterial: 0
+  item_name: Minecart
+  item_type: 3
+  item_sprite: {fileID: -741101566140153539, guid: ea230a4bc9197144bad0a286cb4fa803, type: 3}
+  is_stackable: 0
+  is_material: 0

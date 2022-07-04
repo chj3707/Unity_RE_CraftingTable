@@ -1,0 +1,48 @@
+﻿조합 아이템,"0,0","0,1","0,2","1,0","1,1","1,2","2,0","2,1","2,2"
+Bed,,,,White Wool,White Wool,White Wool,Planks,Planks,Planks
+Planks,,,,,Log,,,,
+Wooden Slab,,,,,,,Planks,Planks,Planks
+Wooden Stairs,,,Planks,,Planks,Planks,Planks,Planks,Planks
+Boat,,,,Planks,,Planks,Planks,Planks,Planks
+Bookshelf,Planks,Planks,Planks,Book,Book,Book,Planks,Planks,Planks
+Bow,String,Stick,,String,,Stick,String,Stick,
+Bowl,,,,Planks,,Planks,,Planks,
+Bread,,,,,,,Wheat,Wheat,Wheat
+Bucket,,,,Iron Ingot,,Iron Ingot,,Iron Ingot,
+Cake,Milk Bucket,Milk Bucket,Milk Bucket,Sugar,Egg,Sugar,Wheat,Wheat,Wheat
+Carrot on a Stick,,,,Fishing Rod,,,,Carrot,
+Chest,Planks,Planks,Planks,Planks,,Planks,Planks,Planks,Planks
+Diamond Axe,Diamond,Diamond,,Diamond,Stick,,,Stick,
+Diamond Boots,,,,Diamond,,Diamond,Diamond,,Diamond
+Diamond Chestplate,Diamond,,Diamond,Diamond,Diamond,Diamond,Diamond,Diamond,Diamond
+Diamond Helmet,,,,Diamond,Diamond,Diamond,Diamond,,Diamond
+Diamond Hoe,Diamond,Diamond,,,Stick,,,Stick,
+Diamond Leggings,Diamond,Diamond,Diamond,Diamond,,Diamond,Diamond,,Diamond
+Diamond Pickaxe,Diamond,Diamond,Diamond,,Stick,,,Stick,
+Diamond Shovel,,Diamond,,,Stick,,,Stick,
+Diamond Sword,,Diamond,,,Diamond,,,Stick,
+Fishing Rod,,,Stick,,Stick,String,Stick,,String
+Glass Pane,,,,Glass,Glass,Glass,Glass,Glass,Glass
+Iron Axe,Iron Ingot,Iron Ingot,,Iron Ingot,Stick,,,Stick,
+Iron Boots,,,,Iron Ingot,,Iron Ingot,Iron Ingot,,Iron Ingot
+Iron Chestplate,Iron Ingot,,Iron Ingot,Iron Ingot,Iron Ingot,Iron Ingot,Iron Ingot,Iron Ingot,Iron Ingot
+Iron Helmet,,,,Iron Ingot,Iron Ingot,Iron Ingot,Iron Ingot,,Iron Ingot
+Iron Hoe,Iron Ingot,Iron Ingot,,,Stick,,,Stick,
+Iron Leggings,Iron Ingot,Iron Ingot,Iron Ingot,Iron Ingot,,Iron Ingot,Iron Ingot,,Iron Ingot
+Iron Pickaxe,Iron Ingot,Iron Ingot,Iron Ingot,,Stick,,,Stick,
+Iron Shovel,,Iron Ingot,,,Stick,,,Stick,
+Iron Sword,,Iron Ingot,,,Iron Ingot,,,Stick,
+Ladder,Stick,,Stick,Stick,Stick,Stick,Stick,,Stick
+Minecart,,,,Iron Ingot,,Iron Ingot,Iron Ingot,Iron Ingot,Iron Ingot
+Mushroom Stew,,Red Mushroom,,,Brown Mushroom,,,Bowl,
+Rail,Iron Ingot,,Iron Ingot,Iron Ingot,Stick,Iron Ingot,Iron Ingot,,Iron Ingot
+Redstone Torch,,,,,Redstone Dust,,,Stick,
+Stick,,,,,Planks,,,Planks,
+TNT,Gunpowder,Sand,Gunpowder,Sand,Gunpowder,Sand,Gunpowder,Sand,Gunpowder
+Torch,,,,,Coal,,,Stick,
+Wooden Axe,Planks,Planks,,Planks,Stick,,,Stick,
+Wooden Hoe,Planks,Planks,,,Stick,,,Stick,
+Wooden Pickaxe,Planks,Planks,Planks,,Stick,,,Stick,
+Wooden Shovel,,Planks,,,Stick,,,Stick,
+Wooden Sword,,Planks,,,Planks,,,Stick,
+Workbench,,,,Planks,Planks,,Planks,Planks,

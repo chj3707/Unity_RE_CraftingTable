@@ -4,10 +4,10 @@ using UnityEngine;
 
 public static class Core
 {
-    public static void Swap<T>(ref T p_a, ref T p_b)
+    public static void swap<T>(ref T lvalue, ref T rvalue)
     {
-        var temp = p_a;
-        p_a = p_b;
-        p_b = temp;
+        var temp = lvalue;
+        lvalue = rvalue;
+        rvalue = temp;
     }
 }

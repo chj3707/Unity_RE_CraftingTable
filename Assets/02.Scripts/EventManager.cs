@@ -10,24 +10,28 @@ using UnityEngine.EventSystems;
 
 public class EventManager : Singleton_Mono<EventManager>
 {
-    private GameObject m_CraftingTablePanel = null;     // 제작대 판넬
-
-    public GameObject m_DraggingItem = null;            // 드래그 아이템 오브젝트
-    public bool m_IsDragging;                           // 드래그 확인용 변수
-
+    private GameObject workbench_panel_obj = null;    
+    public GameObject dragging_item_obj = null;        
+    public bool is_dragging;            
+    
     void Start()
     {
-        m_CraftingTablePanel = UIManager.GetInstance.m_CraftingTablePanel;
-        m_IsDragging = false;
+        initialize();
+    }
+
+    private void initialize()
+    {
+        workbench_panel_obj = UIManager.GetInstance.workbench_panel_obj;
+        is_dragging = false;
     }
 
     // 아이템 추가 버튼 클릭 시 동작하는 함수
     public void _On_AddItemBtnClick()
     {
-        GameObject currClickBtn = EventSystem.current.currentSelectedGameObject; // 현재 클릭한 게임 오브젝트
-        Item currClickItem = currClickBtn.GetComponent<ItemInfo>().m_ItemInfo;   // 클릭한 아이템 정보
+        GameObject current_click_btn = EventSystem.current.currentSelectedGameObject;     // 현재 클릭한 게임 오브젝트
+        Item current_click_item = current_click_btn.GetComponent<ItemInfo>().item_info;   // 클릭한 아이템 정보
 
-        Inventory.AddItemToInventory(currClickItem);                             // 인벤토리에 클릭한 아이템 추가
+        Inventory.insert_item_to_inventory(current_click_item);                           // 인벤토리에 클릭한 아이템 추가
     }
 
     
@@ -36,13 +40,13 @@ public class EventManager : Singleton_Mono<EventManager>
         // Tab :: 제작대 열기, 닫기
         if(Input.GetKeyDown(KeyCode.Tab))
         {
-            UIManager.GetInstance.GameObjectSetActive(m_CraftingTablePanel);
+            UIManager.GetInstance.set_gameobject_active(workbench_panel_obj);
         }
 
         // 드래그중 아이템 마우스 포인터에 위치 시키기
-        if (m_IsDragging)
+        if (is_dragging)
         {
-            m_DraggingItem.transform.position = Input.mousePosition;
+            dragging_item_obj.transform.position = Input.mousePosition;
         }
     }
 }

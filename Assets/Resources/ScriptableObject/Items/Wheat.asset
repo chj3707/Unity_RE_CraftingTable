@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 171fa09cc039cf146a571461383c8075, type: 3}
   m_Name: Wheat
   m_EditorClassIdentifier: 
-  m_ItemName: Wheat
-  m_ItemType: 4
-  m_ItemSprite: {fileID: 6136987273679336495, guid: ea230a4bc9197144bad0a286cb4fa803, type: 3}
-  m_IsStackable: 1
-  m_IsMaterial: 1
+  item_name: Wheat
+  item_type: 4
+  item_sprite: {fileID: 6136987273679336495, guid: ea230a4bc9197144bad0a286cb4fa803, type: 3}
+  is_stackable: 1
+  is_material: 1
