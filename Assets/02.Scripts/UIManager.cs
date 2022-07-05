@@ -40,20 +40,23 @@ public class UIManager : Singleton_Mono<UIManager>
     }
 
     // 사용처 :: 인벤토리 슬롯 생성
-    public void generate_gameobject(GameObject request_object, int copy_count, Transform parent_transform, ref List<InventorySlot> slot_list)
+    public void generate_gameobject(GameObject request_object, int copy_count, Transform parent_transform, ref List<Slot> slot_list)
     {
         for (int i = 0; i < copy_count; i++)
         {
             GameObject copy_object = GameObject.Instantiate(request_object);    
             copy_object.SetActive(true);                                        
             copy_object.name = string.Format($"Slot_{i + 1} ");                 
-            copy_object.transform.SetParent(parent_transform);                  
-            slot_list.Add(copy_object.GetComponent<InventorySlot>());           
+            copy_object.transform.SetParent(parent_transform);
+            
+            Slot temp_slot = copy_object.GetComponent<Slot>();
+            temp_slot.is_workbench_slot = false;
+            slot_list.Add(temp_slot);           
         }
     }
 
     // 사용처 :: 제작대 슬롯 생성
-    public void generate_gameobject(GameObject request_object, int row, int col, Transform parent_transform, ref WorkbenchSlot[,] workbench)
+    public void generate_gameobject(GameObject request_object, int row, int col, Transform parent_transform, ref Slot[,] workbench)
     {
         for (int y = 0; y < row; y++)
         {
@@ -62,8 +65,11 @@ public class UIManager : Singleton_Mono<UIManager>
                 GameObject copy_object = GameObject.Instantiate(request_object);
                 copy_object.SetActive(true);                                
                 copy_object.name = string.Format($"Slot_[{y},{x}]");        
-                copy_object.transform.SetParent(parent_transform);          
-                workbench[y, x] = copy_object.GetComponent<WorkbenchSlot>();
+                copy_object.transform.SetParent(parent_transform);
+
+                Slot temp_slot = copy_object.GetComponent<Slot>();
+                temp_slot.is_workbench_slot = true;
+                workbench[y, x] = temp_slot;
             }
         }
     }

@@ -17,7 +17,9 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 {
     public Stack<Item> item_stack = new Stack<Item>();  // 슬롯에 있는 아이템 정보
     protected Image item_image = null;                  // 아이템 이미지
-    protected Text item_quantity_text = null;                   // 아이템 개수
+    protected Text item_quantity_text = null;           // 아이템 개수
+
+    public bool is_workbench_slot;                      // 작업대 슬롯인지 확인용
 
     private void Awake()
     {
@@ -35,60 +37,66 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     }
 
     // 슬롯 변경 내용 있을 때마다 호출하여 UI 업데이트
-    public void update_UI(Slot request_slot)
+    public void update_UI()
     {
         // 슬롯이 비었을 때
-        if (true == is_slot_empty(request_slot))
+        if (true == is_slot_empty())
         {
-            request_slot.item_image.sprite = null;
-            request_slot.item_image.enabled = false;
+            item_image.sprite = null;
+            item_image.enabled = false;
 
-            request_slot.item_quantity_text.text = request_slot.item_stack.Count.ToString();
-            request_slot.item_quantity_text.enabled = false;
+            item_quantity_text.text = item_stack.Count.ToString();
+            item_quantity_text.enabled = false;
             return;
         }
 
         // 슬롯에 아이템이 있을 때
-        Item current_item = request_slot.item_stack.Peek();
+        Item current_item = item_stack.Peek();
 
-        request_slot.item_image.enabled = true;
-        request_slot.item_image.sprite = current_item.item_sprite;
+        item_image.enabled = true;
+        item_image.sprite = current_item.item_sprite;
         // 쌓을 수 있는 아이템만 개수 표시
-        request_slot.item_quantity_text.enabled = current_item.is_stackable ? true : false;
-        request_slot.item_quantity_text.text = request_slot.item_stack.Count.ToString();
+        item_quantity_text.enabled = current_item.is_stackable ? true : false;
+        item_quantity_text.text = item_stack.Count.ToString();
     }
 
-    // 슬롯에 쌓인 아이템 개수 가져가는 용도
-    public int get_item_stack_quantity(Slot request_slot)
+    // 슬롯에 쌓인 아이템 개수 가져가기
+    public int get_item_stack_quantity()
     {
-        return request_slot.item_stack.Count;
+        return item_stack.Count;
     }
 
-    // 슬롯에 있는 아이템의 최대 개수 가져가는 용도
-    public int get_max_item_stack_in_slot(Slot request_slot)
+    // 슬롯에 있는 아이템의 최대 개수 가져가기
+    public int get_max_item_stack_in_slot()
     {
-        return request_slot.get_item_info(request_slot).is_stackable ? MaxItemStack.stackable : MaxItemStack.non_stackable;
+        return get_item_info().is_stackable ? MaxItemStack.stackable : MaxItemStack.non_stackable;
     }
 
-    // 슬롯에 있는 아이템 정보 가져가는 용도
-    public Item get_item_info(Slot request_slot)
+    // 슬롯에 있는 아이템 정보 가져가기
+    public Item get_item_info()
     {
-        return is_slot_empty(request_slot) ? null : request_slot.item_stack.Peek();
+        return true == is_slot_empty() ? null : item_stack.Peek();
     }
 
-    // 슬롯에 있는 아이템 스택이 가득 찼는지 확인
-    public bool is_item_stack_full(Slot request_slot)
+    // 슬롯에 있는 아이템 이름 가져가기
+    public string get_item_name()
     {
-        Item temp_item = request_slot.item_stack.Peek();
-        if (temp_item.is_stackable && request_slot.item_stack.Count == MaxItemStack.stackable) return true;
-        else if(!temp_item.is_stackable && request_slot.item_stack.Count == MaxItemStack.non_stackable) return true;
+        return true == is_slot_empty() ? string.Empty : item_stack.Peek().item_name;
+    }
+
+    // 슬롯에 있는 아이템 스택이 가득 찼는가
+    public bool is_item_stack_full()
+    {
+        Item temp_item = item_stack.Peek();
+        if (true == temp_item.is_stackable && item_stack.Count == MaxItemStack.stackable) return true;
+        else if (false == temp_item.is_stackable && item_stack.Count == MaxItemStack.non_stackable) return true;
         return false;
     }
 
     // 슬롯이 비어 있는지 확인
-    public bool is_slot_empty(Slot request_slot)
+    public bool is_slot_empty()
     {
-        if (0 == request_slot.item_stack.Count) return true;
+        if (0 == item_stack.Count) return true;
         return false;
     }
 
@@ -114,15 +122,17 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventdata)
     {
         EventManager eventmanager = EventManager.GetInstance;
-        switch(is_slot_empty(this))
+
+        switch (this.is_slot_empty())
         {
             // 빈 슬롯 클릭
             case true:
-                switch(eventmanager.is_dragging)
+                switch (eventmanager.is_dragging)
                 {
                     // 아이템 드래그중 :: 아이템 드랍
                     case true:
                         items_drop(eventdata, eventmanager);
+                        if (true == is_workbench_slot) ++Workbench.workbench_material_quantity;
                         break;
 
                     // 아이템 드래그중이 아님 :: return
@@ -143,9 +153,15 @@ public class Slot : MonoBehaviour, IPointerClickHandler
                     // 드래그 중이 아님 :: 슬롯 아이템 드래그
                     case false:
                         items_drag(eventdata, eventmanager);    // 아이템 드래그 :: 함수 내 에서 좌,우 클릭 분리
-                        return;
+                        break;
                 }
                 break;
+        }
+
+        if (true == is_workbench_slot)
+        {
+            Workbench temp_workbench = this.GetComponentInParent<Workbench>();
+            temp_workbench.compare_workbench_and_recipes();
         }
     }
 
@@ -160,11 +176,13 @@ public class Slot : MonoBehaviour, IPointerClickHandler
             // 좌 클릭 :: 슬롯에 있는 모든 아이템 드래그
             case -1:
                 pickup_item_count = item_stack.Count;
+                if (true == is_workbench_slot) --Workbench.workbench_material_quantity;
                 break;
 
             // 우 클릭 :: 슬롯에 있는 아이템 절반 드래그
             case -2:
                 pickup_item_count = Mathf.CeilToInt(item_stack.Count * 0.5f);
+                if (true == is_workbench_slot && 1 == get_item_stack_quantity()) --Workbench.workbench_material_quantity;
                 break;
         }
         eventmanager.is_dragging = true;
@@ -172,8 +190,8 @@ public class Slot : MonoBehaviour, IPointerClickHandler
         for (int i = 0; i < pickup_item_count; i++)
             dragging_item.item_stack.Push(item_stack.Pop());
 
-        update_UI(dragging_item);
-        update_UI(this);
+        dragging_item.update_UI();
+        this.update_UI();
     }
 
     // 아이템 슬롯에 드랍
@@ -190,14 +208,14 @@ public class Slot : MonoBehaviour, IPointerClickHandler
              * 2. 아이템 있는 슬롯 :: 슬롯의 아이템 최대 개수만큼 드랍
              */
             case -1:
-                if (true == is_slot_empty(this))
+                if (true == this.is_slot_empty())
                 {
                     drop_item_count = dragging_item.item_stack.Count;
                 }
                 else
                 {
-                    int dragging_item_count = get_item_stack_quantity(dragging_item);
-                    int required_item_count = get_max_item_stack_in_slot(this) - get_item_stack_quantity(this);
+                    int dragging_item_count = dragging_item.get_item_stack_quantity();
+                    int required_item_count = this.get_max_item_stack_in_slot() - this.get_item_stack_quantity();
 
                     drop_item_count = dragging_item_count >= required_item_count ? required_item_count : dragging_item_count;
                 }
@@ -205,21 +223,21 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
             // 우 클릭 :: 슬롯에 아이템 1개 드랍
             case -2:
-                if(true == is_slot_empty(this) ||
-                   get_item_stack_quantity(this) < get_max_item_stack_in_slot(this))
+                if (true == this.is_slot_empty() ||
+                   this.get_item_stack_quantity() < this.get_max_item_stack_in_slot())
                 {
                     drop_item_count = 1;
-                }       
+                }
                 break;
         }
 
         for (int i = 0; i < drop_item_count; i++)
             item_stack.Push(dragging_item.item_stack.Pop());
 
-        update_UI(dragging_item);
-        update_UI(this);
+        dragging_item.update_UI();
+        this.update_UI();
 
-        if (true == is_slot_empty(dragging_item))
+        if (true == dragging_item.is_slot_empty())
             eventmanager.is_dragging = false;
     }
 
@@ -229,7 +247,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler
         DraggingItem dragging_item = eventmanager.dragging_item_obj.GetComponent<DraggingItem>();
 
         // 드래그 아이템과 슬롯 아이템 정보 비교
-        switch(get_item_info(dragging_item) == get_item_info(this))
+        switch (dragging_item.get_item_info() == this.get_item_info())
         {
             // 같은 아이템 :: 아이템 드랍
             case true:
@@ -239,8 +257,8 @@ public class Slot : MonoBehaviour, IPointerClickHandler
             // 다른 아이템 :: 드래그 아이템과 슬롯 아이템 데이터 스왑
             case false:
                 Core.swap<Stack<Item>>(ref dragging_item.item_stack, ref item_stack);
-                update_UI(dragging_item);
-                update_UI(this);
+                dragging_item.update_UI();
+                this.update_UI();
                 break;
         }
     }
