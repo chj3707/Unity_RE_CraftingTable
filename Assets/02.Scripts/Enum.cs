@@ -18,3 +18,22 @@ public enum EItemType
 
     max
 }
+
+public enum ECommonMaterial
+{
+    none = -1,
+
+    Log,
+    Plank,
+
+    max
+}
+
+public enum ENonConsumeMaterialItem
+{
+    none = -1,
+
+    Bucket,
+
+    max
+}

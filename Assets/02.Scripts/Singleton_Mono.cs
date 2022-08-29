@@ -51,14 +51,4 @@ public class Singleton_Mono<T> : MonoBehaviour where T : MonoBehaviour
     {
         m_isClosing = true;
     }
-
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
-    }
 }

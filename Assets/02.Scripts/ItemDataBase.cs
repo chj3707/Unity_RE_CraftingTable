@@ -9,20 +9,15 @@ using System;
 
 public class ItemRecipe
 {
-    private string item_name;       // 아이템 이름
     private string[,] recipe;       // 아이템 레시피
+    private int create_quantity;    // 아이템 생성 개수
     private int material_quantity;  // 필요한 총 재료량
 
     public ItemRecipe()
     {
-        item_name = String.Empty;
         recipe = new string[3, 3];
+        create_quantity = 0;
         material_quantity = 0;
-    }
-    public string ItemName
-    {
-        get { return item_name; }
-        set { item_name = value; }
     }
 
     public string[,] Recipe
@@ -31,7 +26,13 @@ public class ItemRecipe
         set { recipe = value; }
     }
 
-    public int MaterialAmount
+    public int CreateQuantity
+    {
+        get { return create_quantity; }
+        set { create_quantity = value; }
+    }
+
+    public int MaterialQuantity
     {
         get { return material_quantity; }
         set { material_quantity = value; }
@@ -87,11 +88,13 @@ public class ItemDataBase : Singleton_Mono<ItemDataBase>
         for (int i = 0; i < recipe_count; i++)
         {
             string item_name = "";                       // 조합 아이템 이름
+            int item_create_quantity = 0;                // 조합 아이템 생성 개수
             string[,] item_recipe = new string[3, 3];    // 조합 아이템 레시피
             int material_quantity = 0;                   // 조합 아이템 재료 개수
 
             /* object 형식 데이터 언박싱 */
-            item_name = csv_data[i]["조합 아이템"] as string;                                        
+            item_name = csv_data[i]["조합 아이템"] as string;
+            item_create_quantity = int.Parse(csv_data[i]["생성 개수"].ToString());
 
             /* 조합법 :: CSV파일 작성 할 때 0,0 ~ 2,2 형식으로 구성  */
             for (int j = 0; j < 3; j++)
@@ -111,9 +114,9 @@ public class ItemDataBase : Singleton_Mono<ItemDataBase>
 
             /* 언박싱한 데이터 객체에 저장, 데이터 베이스에 추가 */
             ItemRecipe temp_item_recipe = new ItemRecipe();
-            temp_item_recipe.ItemName = item_name;
             temp_item_recipe.Recipe = item_recipe;
-            temp_item_recipe.MaterialAmount = material_quantity;
+            temp_item_recipe.CreateQuantity = item_create_quantity;
+            temp_item_recipe.MaterialQuantity = material_quantity;
             item_recipe_database[material_quantity].Add(item_name, temp_item_recipe);
         }
     }

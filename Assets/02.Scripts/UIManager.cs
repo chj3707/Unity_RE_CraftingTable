@@ -33,44 +33,9 @@ public class UIManager : Singleton_Mono<UIManager>
     {
         GameObject copy_object = GameObject.Instantiate(request_object);        
         copy_object.SetActive(true);                                            
-        copy_object.GetComponent<ItemInfo>().item_info = item_info;              
+        copy_object.GetComponent<Item_Scriptable>().item = item_info;              
         copy_object.GetComponent<Image>().sprite = item_info.item_sprite;        
         copy_object.name = string.Format($"Add Item [{item_info.item_name}]");  
         copy_object.transform.SetParent(parent_transform);                      
-    }
-
-    // 사용처 :: 인벤토리 슬롯 생성
-    public void generate_gameobject(GameObject request_object, int copy_count, Transform parent_transform, ref List<Slot> slot_list)
-    {
-        for (int i = 0; i < copy_count; i++)
-        {
-            GameObject copy_object = GameObject.Instantiate(request_object);    
-            copy_object.SetActive(true);                                        
-            copy_object.name = string.Format($"Slot_{i + 1} ");                 
-            copy_object.transform.SetParent(parent_transform);
-            
-            Slot temp_slot = copy_object.GetComponent<Slot>();
-            temp_slot.is_workbench_slot = false;
-            slot_list.Add(temp_slot);           
-        }
-    }
-
-    // 사용처 :: 제작대 슬롯 생성
-    public void generate_gameobject(GameObject request_object, int row, int col, Transform parent_transform, ref Slot[,] workbench)
-    {
-        for (int y = 0; y < row; y++)
-        {
-            for (int x = 0; x < col; x++)
-            {
-                GameObject copy_object = GameObject.Instantiate(request_object);
-                copy_object.SetActive(true);                                
-                copy_object.name = string.Format($"Slot_[{y},{x}]");        
-                copy_object.transform.SetParent(parent_transform);
-
-                Slot temp_slot = copy_object.GetComponent<Slot>();
-                temp_slot.is_workbench_slot = true;
-                workbench[y, x] = temp_slot;
-            }
-        }
     }
 }

@@ -29,7 +29,7 @@ public class EventManager : Singleton_Mono<EventManager>
     public void _On_AddItemBtnClick()
     {
         GameObject current_click_btn = EventSystem.current.currentSelectedGameObject;     // 현재 클릭한 게임 오브젝트
-        Item current_click_item = current_click_btn.GetComponent<ItemInfo>().item_info;   // 클릭한 아이템 정보
+        Item current_click_item = current_click_btn.GetComponent<Item_Scriptable>().item; // 클릭한 아이템 정보
 
         Inventory.insert_item_to_inventory(current_click_item);                           // 인벤토리에 클릭한 아이템 추가
     }
