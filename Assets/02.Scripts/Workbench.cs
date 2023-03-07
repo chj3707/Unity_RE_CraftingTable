@@ -47,10 +47,10 @@ public class Workbench : MonoBehaviour
     {
         var item_recipe_datas = ItemDataBase.GetInstance.get_item_recipe_data(workbench_material_quantity);
 
-        foreach (var item_name_recipe in item_recipe_datas)
+        foreach (var item_recipe in item_recipe_datas)
         {
-            string crafting_item_name = item_name_recipe.Key;
-            string[,] crafting_item_recipe = item_name_recipe.Value.Recipe;
+            string crafting_item_name = item_recipe.Key;
+            string[,] crafting_item_recipe = item_recipe.Value.Recipe;
 
             bool flag = true;
 
@@ -68,57 +68,44 @@ public class Workbench : MonoBehaviour
                         string prefix = split_item_name[0];
                         string suffix = split_item_name[1];
 
-                        if (crafting_item_recipe[i, j] != suffix)
-                        {
-                            flag = false;
-                            break;
-                        }
+                        if (crafting_item_recipe[i, j] != suffix) flag = false; break;
 
                         if (true == is_crafting_item_name_contains_suffix)
                             crafting_item_name = prefix + " " + crafting_item_name;
                     }
 
-                    else if (crafting_item_recipe[i, j] != material_item_name)
-                    {
-                        flag = false;
-                        break;
-                    }
+                    else if (crafting_item_recipe[i, j] != material_item_name) flag = false; break;
                 }
                 if (false == flag) break;
             }
 
-            if (true == flag)
-            {
-                Item crafting_item = ItemDataBase.GetInstance.item_database[crafting_item_name];
-
-                for (int i = 0; i < item_name_recipe.Value.CreateQuantity; i++)
-                    crafting_item_slot.item_info.item_stack.Push(crafting_item);
-
-                crafting_item_slot.item_info.update_UI();
-                return;
-            }
+            if (true == flag) item_crafting(item_recipe, crafting_item_name); return;
         }
 
-        // 레시피에서 탐색이 안되었으면 조합 아이템 슬롯 리셋
         crafting_item_slot.reset_item_slot();
+    }
+    private void item_crafting(KeyValuePair<string, ItemRecipe> item_recipe, string crafting_item_name)
+    {
+        Item crafting_item = ItemDataBase.GetInstance.item_database[crafting_item_name];
+
+        for (int i = 0; i < item_recipe.Value.CreateQuantity; i++)
+            crafting_item_slot.item_info.item_stack.Push(crafting_item);
+
+        crafting_item_slot.item_info.update_UI();
     }
 
     public bool is_common_material(string item_name, ECommonMaterial from)
     {
         for (ECommonMaterial suffix = from + 1; suffix < ECommonMaterial.max; suffix++)
-        {
             if (true == item_name.Contains(suffix.ToString())) return true;
-        }
 
         return false;
     }
 
-    public string is_consume_material(string item_name, ENonConsumeMaterialItem from)
+    public string search_nonconsume_material(string item_name, ENonConsumeMaterialItem from)
     {
         for (ENonConsumeMaterialItem item = from + 1; item < ENonConsumeMaterialItem.max; item++)
-        {
             if (true == item_name.Contains(item.ToString())) return item.ToString();
-        }
 
         return String.Empty;
     }
@@ -132,7 +119,7 @@ public class Workbench : MonoBehaviour
                 ItemInfo current_item = workbench[i, j].item_info;
                 if (null != current_item.get_top_item_info())
                 {
-                    string material_item_name = is_consume_material(current_item.get_top_item_name(), ENonConsumeMaterialItem.none);
+                    string material_item_name = search_nonconsume_material(current_item.get_top_item_name(), ENonConsumeMaterialItem.none);
                     if (String.Empty == material_item_name)
                     {
                         current_item.item_stack.Pop();

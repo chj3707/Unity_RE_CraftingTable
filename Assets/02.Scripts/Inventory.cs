@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour
     {
         IEnumerator<Slot> enumerator = slot_list.GetEnumerator();
         // 슬롯에 채울 아이템 개수
-        int insert_item_stack = insert_item.is_stackable ? MaxItemStack.stackable : MaxItemStack.non_stackable;
+        int insert_item_count = insert_item.is_stackable ? MaxItemStack.stackable : MaxItemStack.non_stackable;
 
         while (enumerator.MoveNext())
         {
@@ -38,21 +38,21 @@ public class Inventory : MonoBehaviour
 
             if (null == current_item)
             {
-                for (int i = 0; i < insert_item_stack; i++)
+                for (int i = 0; i < insert_item_count; i++)
                     current_slot.item_info.item_stack.Push(insert_item);
 
-                insert_item_stack = 0;
+                insert_item_count = 0;
             }
             else if(insert_item == current_item)
             {
-                while (!current_slot.item_info.is_item_stack_full() && insert_item_stack > 0)
+                while (false == current_slot.item_info.is_item_stack_full() && insert_item_count > 0)
                 {
                     current_slot.item_info.item_stack.Push(insert_item);
-                    --insert_item_stack;
+                    --insert_item_count;
                 }
             }
             current_slot.item_info.update_UI();        // 슬롯 UI 업데이트
-            if (0 == insert_item_stack) break;         // 추가할 아이템 개수가 0개 이면 종료
+            if (0 == insert_item_count) break;         // 추가할 아이템 개수가 0개 이면 종료
         }
     }
 }

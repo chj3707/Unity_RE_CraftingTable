@@ -44,12 +44,12 @@ public class CraftingItem : MonoBehaviour,
 
         DraggingItem dragging_item = eventmanager.dragging_item_obj.GetComponent<DraggingItem>();
 
-        int pickup_item_count = this.item_info.get_item_stack_quantity();
+        int pickup_item_quantity = this.item_info.get_item_stack_quantity();
 
         eventmanager.is_dragging = true;
 
         // 슬롯 아이템 스택 Pop(), 드래그 아이템 스택 Push() 반복
-        for (int i = 0; i < pickup_item_count; i++)
+        for (int i = 0; i < pickup_item_quantity; i++)
             dragging_item.item_info.item_stack.Push(this.item_info.item_stack.Pop());
 
         workbench.consume_material_items();
