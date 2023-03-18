@@ -43,8 +43,9 @@ public class Workbench : MonoBehaviour
      * 1. 아이템 레시피 데이터 베이스 가져오기
      * 2. 아이템 레시피들 제작대와 비교해서 조합 아이템 탐색
      */
-    public void compare_workbench_and_recipes()
+    public void compare_workbench_with_recipes()
     {
+        crafting_item_slot.reset_item_slot();
         var item_recipe_datas = ItemDataBase.GetInstance.get_item_recipe_data(workbench_material_quantity);
 
         foreach (var item_recipe in item_recipe_datas)
@@ -52,37 +53,37 @@ public class Workbench : MonoBehaviour
             string crafting_item_name = item_recipe.Key;
             string[,] crafting_item_recipe = item_recipe.Value.Recipe;
 
-            bool flag = true;
+            bool is_craftable = true;
 
             for (int i = 0; i < row; i++)
             {
                 for (int j = 0; j < col; j++)
                 {
                     string material_item_name = workbench[i, j].item_info.get_top_item_name();
-                    bool is_material_item_name_contains_suffix = is_common_material(material_item_name, ECommonMaterial.none);
-                    bool is_crafting_item_name_contains_suffix = is_common_material(crafting_item_name, ECommonMaterial.none);
 
-                    if (true == is_material_item_name_contains_suffix)
+                    if (true == is_common_material(material_item_name, ECommonMaterial.none))
                     {
                         string[] split_item_name = material_item_name.Split(' ');
                         string prefix = split_item_name[0];
                         string suffix = split_item_name[1];
 
-                        if (crafting_item_recipe[i, j] != suffix) flag = false; break;
-
-                        if (true == is_crafting_item_name_contains_suffix)
+                        if (crafting_item_recipe[i, j] != suffix)
+                        {
+                            is_craftable = false;
+                            break;
+                        }
+                        if (true == is_common_material(crafting_item_name, ECommonMaterial.none))
+                        {
                             crafting_item_name = prefix + " " + crafting_item_name;
+                        }
                     }
-
-                    else if (crafting_item_recipe[i, j] != material_item_name) flag = false; break;
+                    else if (crafting_item_recipe[i, j] != material_item_name) { is_craftable = false; break; }
                 }
-                if (false == flag) break;
+                if (false == is_craftable) break;
             }
 
-            if (true == flag) item_crafting(item_recipe, crafting_item_name); return;
+            if (true == is_craftable) { item_crafting(item_recipe, crafting_item_name); break; }
         }
-
-        crafting_item_slot.reset_item_slot();
     }
     private void item_crafting(KeyValuePair<string, ItemRecipe> item_recipe, string crafting_item_name)
     {

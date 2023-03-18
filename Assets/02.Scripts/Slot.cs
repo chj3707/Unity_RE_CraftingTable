@@ -92,7 +92,7 @@ public class Slot : MonoBehaviour,
         if (true == is_workbench_slot)
         {
             Workbench temp_workbench = this.GetComponentInParent<Workbench>();
-            temp_workbench.compare_workbench_and_recipes();
+            temp_workbench.compare_workbench_with_recipes();
         }
     }
 
