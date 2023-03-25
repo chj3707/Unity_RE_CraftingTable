@@ -106,14 +106,14 @@ public class Slot : MonoBehaviour,
         {
             // 좌 클릭 :: 슬롯에 있는 모든 아이템 드래그
             case -1:
-                pickup_item_count = item_info.get_item_stack_quantity();
+                pickup_item_count = item_info.get_current_item_quantity();
                 if (true == is_workbench_slot) --Workbench.workbench_material_quantity;
                 break;
 
             // 우 클릭 :: 슬롯에 있는 아이템 절반 드래그
             case -2:
-                pickup_item_count = Mathf.CeilToInt(item_info.get_item_stack_quantity() * 0.5f);
-                if (true == is_workbench_slot && 1 == item_info.get_item_stack_quantity()) --Workbench.workbench_material_quantity;
+                pickup_item_count = Mathf.CeilToInt(item_info.get_current_item_quantity() * 0.5f);
+                if (true == is_workbench_slot && 1 == item_info.get_current_item_quantity()) --Workbench.workbench_material_quantity;
                 break;
         }
         eventmanager.is_dragging = true;
@@ -142,12 +142,12 @@ public class Slot : MonoBehaviour,
             case -1:
                 if (true == this.item_info.is_item_stack_empty())
                 {
-                    drop_item_count = dragging_item.item_info.get_item_stack_quantity();
+                    drop_item_count = dragging_item.item_info.get_current_item_quantity();
                 }
                 else
                 {
-                    int dragging_item_count = dragging_item.item_info.get_item_stack_quantity();
-                    int required_item_count = this.item_info.get_max_item_stack() - this.item_info.get_item_stack_quantity();
+                    int dragging_item_count = dragging_item.item_info.get_current_item_quantity();
+                    int required_item_count = this.item_info.get_item_max_quantity() - this.item_info.get_current_item_quantity();
 
                     drop_item_count = dragging_item_count >= required_item_count ? required_item_count : dragging_item_count;
                 }
@@ -156,7 +156,7 @@ public class Slot : MonoBehaviour,
             // 우 클릭 :: 슬롯에 아이템 1개 드랍
             case -2:
                 if (true == this.item_info.is_item_stack_empty() ||
-                    this.item_info.get_item_stack_quantity() < this.item_info.get_max_item_stack())
+                    this.item_info.get_current_item_quantity() < this.item_info.get_item_max_quantity())
                 {
                     drop_item_count = 1;
                 }
@@ -180,7 +180,7 @@ public class Slot : MonoBehaviour,
         DraggingItem dragging_item = eventmanager.dragging_item_obj.GetComponent<DraggingItem>();
 
         // 같은 아이템 :: 아이템 드랍
-        if (dragging_item.item_info.get_top_item_info() == this.item_info.get_top_item_info())
+        if (dragging_item.item_info.get_item_info() == this.item_info.get_item_info())
         {
             items_drop(eventdata, eventmanager); 
             return;

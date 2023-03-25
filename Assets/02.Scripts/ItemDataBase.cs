@@ -61,6 +61,11 @@ public class ItemDataBase : Singleton_Mono<ItemDataBase>
             item_recipe_database.Add(new Dictionary<string, ItemRecipe>());
     }
 
+    public Item get_item_data(string item_name)
+    {
+        return item_database[item_name];
+    }
+
     public Dictionary<string, ItemRecipe> get_item_recipe_data(int material_quantity)
     {
         return item_recipe_database[material_quantity];

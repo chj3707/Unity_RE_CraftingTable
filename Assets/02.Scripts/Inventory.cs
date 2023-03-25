@@ -28,7 +28,7 @@ public class Inventory : MonoBehaviour
         while (enumerator.MoveNext())
         {
             Slot current_slot = enumerator.Current;                          // 현재 확인할 슬롯
-            Item current_item = current_slot.item_info.get_top_item_info();  // 현재 슬롯에 있는 아이템 정보
+            Item current_item = current_slot.item_info.get_item_info();  // 현재 슬롯에 있는 아이템 정보
 
             /* 
              *  재료 아이템 추가 조건

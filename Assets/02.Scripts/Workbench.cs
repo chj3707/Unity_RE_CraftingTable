@@ -59,7 +59,7 @@ public class Workbench : MonoBehaviour
             {
                 for (int j = 0; j < col; j++)
                 {
-                    string material_item_name = workbench[i, j].item_info.get_top_item_name();
+                    string material_item_name = workbench[i, j].item_info.get_item_name();
 
                     if (true == is_common_material(material_item_name, ECommonMaterial.none))
                     {
@@ -67,29 +67,23 @@ public class Workbench : MonoBehaviour
                         string prefix = split_item_name[0];
                         string suffix = split_item_name[1];
 
-                        if (crafting_item_recipe[i, j] != suffix)
-                        {
-                            is_craftable = false;
-                            break;
-                        }
-                        if (true == is_common_material(crafting_item_name, ECommonMaterial.none))
-                        {
-                            crafting_item_name = prefix + " " + crafting_item_name;
-                        }
+                        if (crafting_item_recipe[i, j] != suffix) { is_craftable = false; break; }
+                        if (true == is_common_material(crafting_item_name, ECommonMaterial.none)) { crafting_item_name = prefix + " " + crafting_item_name; }
                     }
                     else if (crafting_item_recipe[i, j] != material_item_name) { is_craftable = false; break; }
                 }
+
                 if (false == is_craftable) break;
             }
 
-            if (true == is_craftable) { item_crafting(item_recipe, crafting_item_name); break; }
+            if (true == is_craftable) { item_crafting(crafting_item_name, item_recipe.Value.CreateQuantity); break; }
         }
     }
-    private void item_crafting(KeyValuePair<string, ItemRecipe> item_recipe, string crafting_item_name)
+    private void item_crafting(string crafting_item_name, int create_quantity)
     {
-        Item crafting_item = ItemDataBase.GetInstance.item_database[crafting_item_name];
+        Item crafting_item = ItemDataBase.GetInstance.get_item_data(crafting_item_name);
 
-        for (int i = 0; i < item_recipe.Value.CreateQuantity; i++)
+        for (int i = 0; i < create_quantity; i++)
             crafting_item_slot.item_info.item_stack.Push(crafting_item);
 
         crafting_item_slot.item_info.update_UI();
@@ -111,28 +105,27 @@ public class Workbench : MonoBehaviour
         return String.Empty;
     }
 
-    public void consume_material_items()
+    public void consume_material_item()
     {
         for (int i = 0; i < row; i++)
         {
             for (int j = 0; j < col; j++)
             {
-                ItemInfo current_item = workbench[i, j].item_info;
-                if (null != current_item.get_top_item_info())
-                {
-                    string material_item_name = search_nonconsume_material(current_item.get_top_item_name(), ENonConsumeMaterialItem.none);
-                    if (String.Empty == material_item_name)
-                    {
-                        current_item.item_stack.Pop();
-                        if (0 == current_item.get_item_stack_quantity()) --workbench_material_quantity;
-                        current_item.update_UI();
-                        continue;
-                    }
+                ItemInfo current_item_info = workbench[i, j].item_info;
+                if (null == current_item_info.get_item_info()) continue;
 
-                    current_item.item_stack.Clear();
-                    current_item.item_stack.Push(ItemDataBase.GetInstance.item_database[material_item_name]);
-                    current_item.update_UI();
+                string material_item_name = search_nonconsume_material(current_item_info.get_item_name(), ENonConsumeMaterialItem.none);
+                if (String.Empty == material_item_name)
+                {
+                    current_item_info.item_stack.Pop();
+                    if (true == current_item_info.is_item_stack_empty()) --workbench_material_quantity;
                 }
+                else
+                {
+                    current_item_info.item_stack.Clear();
+                    current_item_info.item_stack.Push(ItemDataBase.GetInstance.get_item_data(material_item_name));
+                }
+                current_item_info.update_UI();
             }
         }
     }

@@ -43,16 +43,16 @@ public class CraftingItem : MonoBehaviour,
         EventManager eventmanager = EventManager.GetInstance;
         DraggingItem dragging_item = eventmanager.dragging_item_obj.GetComponent<DraggingItem>();
         if (false == dragging_item.item_info.is_item_stack_empty() && true == dragging_item.item_info.is_item_stack_full()) return;
-        if (true == eventmanager.is_dragging && dragging_item.item_info.get_top_item_info() != this.item_info.get_top_item_info()) return;
+        if (true == eventmanager.is_dragging && dragging_item.item_info.get_item_info() != this.item_info.get_item_info()) return;
 
-        int pickup_item_quantity = this.item_info.get_item_stack_quantity();
+        int pickup_item_quantity = this.item_info.get_current_item_quantity();
         eventmanager.is_dragging = true;
 
         // 슬롯 아이템 스택 Pop(), 드래그 아이템 스택 Push() 반복
         for (int i = 0; i < pickup_item_quantity; i++)
             dragging_item.item_info.item_stack.Push(this.item_info.item_stack.Pop());
             
-        workbench.consume_material_items();
+        workbench.consume_material_item();
         dragging_item.item_info.update_UI();
         this.item_info.update_UI();
         workbench.compare_workbench_with_recipes();
